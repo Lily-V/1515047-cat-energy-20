@@ -1,5 +1,4 @@
 // Начните писать стили здесь
-
 @white: #fff;
 @line-height: 20px;
 @black: #000;
@@ -10,8 +9,7 @@ body {
 
 .header {
   padding-top: 24px;
-  font-family: 'Oswald', sans-serif;
-
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   text-transform: uppercase;
 }
@@ -24,32 +22,34 @@ body {
 }
 
 .header__logo {
-  background-image: url(../img/logo-mobile.svg);
+  background-image: url("../img/logo-mobile.svg");
   padding: 24px 0;
 
-  ::after{
-  content: "";
-  width: 320px;
-  border: 1px solid #E6E6E6;
+  ::after {
+    content: "";
+    width: 320px;
+    border: 1px solid #e6e6e6;
   }
 }
 
 .burger {
   visibility: hidden;
 }
+
 .menu {
   font-size: 20px;
   font-weight: 500;
-  list-style-type: none;
   color: @black;
   line-height: 20px;
 
   &-link {
-  margin: 24px 0;
-  ::after{
-    content: "";
-    width: 320px;
-    border: 1px solid #E6E6E6;
+    margin: 24px 0;
+    list-style-type: none;
+
+    ::after {
+      content: "";
+      width: 320px;
+      border: 1px solid #e6e6e6;
     }
   }
 
@@ -60,14 +60,13 @@ body {
 }
 
 .after-menu {
-  background: url(../img/index-background-mobile@1x.jpg) no-repeat;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
   background-size: cover;
   color: @white;
   font-style: normal;
   font-weight: normal;
   text-align: center;
   position: relative;
-  text-align: center;
 
   &-title {
     font-size: 36px;
@@ -102,6 +101,3 @@ body {
     line-height: 18px;
   }
 }
-
-
-
