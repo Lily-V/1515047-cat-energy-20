@@ -132,7 +132,23 @@ sass/
 
 
 
+.brick-layout {
+    width: 400px;
+    padding: 5px;
+    box-sizing: content-box;
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.brick {
+    min-height: 80px;
+    min-width: 50px;
+    flex-basis: 100px;
+    margin: 5px;
+}
+.brick:nth-child(2n) {
+    flex-grow: 1;
+}
 
 
 
