@@ -1,0 +1,66 @@
+.benefits {
+  margin-top: 210px;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    background: @grey;
+    padding: 20px;
+    margin-bottom: 29px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: baseline;
+    position: relative;
+    margin-bottom: 22px;
+
+  }
+
+  &__round-slim {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: @green;
+      background-image: url("../../img/icon-cat-slim.svg");
+      font-size: 0;
+      margin-right: 19px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+  }
+
+  &__title {
+    font-family: "Oswald", "Tahoma", sans-serif;
+    .font-feature-3(24px);
+    text-transform: uppercase;
+    margin-left: 71px;
+  }
+
+  &__round-pro {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: @green;
+    background-image: url("../../img/icon-cat-pro.svg");
+    font-size: 0;
+    margin-right: 19px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+  &___text {
+    font-family: "Arial", sans-serif;
+    .font-feature-2(14px);
+
+    ::after {
+      content: "";
+      display: block;
+      margin-bottom: 24px;
+      border: 1px solid @secondary-border;
+    }
+  }
+
+}

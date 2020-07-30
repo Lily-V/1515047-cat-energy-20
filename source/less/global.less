@@ -1,6 +1,55 @@
 .wrapper {
-  max-width: 277px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
+  max-width: 280px;
+  margin: auto;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  display: block;
+  width: 280px;
+  margin: 15px auto;
+  padding: 10px 0;
+  font-family: "Oswald", "Tahoma", sans-serif;
+  color: @white;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  .font-feature-2(16px);
+}
+.button--green {
+  background-color: @green;
+}
+
+.button--grey {
+  background-color: @grey;
+  color: @dark-grey;
+  font-family: "Oswald", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+
 }

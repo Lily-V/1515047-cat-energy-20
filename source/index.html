@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cat Energy</title>
 
 </head>
@@ -12,35 +13,33 @@
 
     <!--Header-->
     <header class="header">
-        <div class="wrapper">
+        <a class="header__logo"><img src="img/logo-mobile.svg" alt="Логотип Cat Energy"></a>
 
-            <a class="header__logo"></a>
+        <button class="burger" type="button"></button>
 
-            <button class="" type="button"></button>
-
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__link">
-                        <a>главная</a>
-                    </li>
-                    <li class="menu__link">
-                        <a href="catalog.html">каталог продукции</a>
-                    </li>
-                    <li class="menu__link">
-                        <a href="form.html">подбор программы</a>
-                    </li>
-                </ul>
-            </nav>
-            <section class="after-menu">
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__link">
+                    <a>главная</a>
+                </li>
+                <li class="menu__link">
+                    <a href="catalog.html">каталог продукции</a>
+                </li>
+                <li class="menu__link">
+                    <a href="form.html">подбор программы</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="after-menu">
+            <div class="wrapper">
                 <p class="after-menu__title">Функциональное питание для котов</p>
                 <p class="after-menu__subtitle">Занялся собой? Займись котом!</p>
                 <img src="img/index-can-mobile@1x.png" alt="Cat Energy упаковка">
 
                 <a class="button button--green" href="#">подобрать программу</a>
-            </section>
+            </div>
+        </section>
 
-        </div>
-        <!--wrapper-->
     </header>
     <!--header-->
 
@@ -52,14 +51,21 @@
             <div class="wrapper">
 
                 <article class="benefits__block">
-                    <h2 class="benefits__title">похудение</h2>
+                    <div class="benefits__wrapper">
+                        <div class="benefits__round-slim">текст</div>
+                        <h2 class="benefits__title">похудение</h2>
+                    </div>
                     <p class="benefits__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
 
                     <a class="benefits__link" href="catalog.html"></a>
                 </article>
-
+            </div>
+            <div class="wrapper">
                 <article class="benefits__block">
-                    <h2 class="benefits__title">набор массы</h2>
+                    <div class="benefits__wrapper">
+                        <div class="benefits__round-pro">текст</div>
+                        <h2 class="benefits__title">набор массы</h2>
+                    </div>
                     <p class="benefits__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
 
                     <a class="benefits__link" href="catalog.html"></a>
@@ -96,28 +102,29 @@
         <div class="wrapper">
 
             <div class="footer__title">
-                <a href="https://htmlacademy.ru/intensive/adaptive"><img src="https://via.placeholder.com/108x18" alt="Cat Energy"></a>
+                <a href="https://htmlacademy.ru/intensive/adaptive"><img src="img/logo-footer.svg" alt="Cat Energy"></a>
             </div>
             <ul class="footer__social">
                 <li>
-                    <a class="footer__link" href="#" target="_blank">
+                    <a class="footer__link-vk" href="#" target="_blank">
                         <span class="visually-hidden">Ссылка на страницу Вконтакте</span>
                     </a>
                 </li>
                 <li>
-                    <a class="footer__link" href="#" target="_blank">
+                    <a class="footer__link-ig" href="#" target="_blank">
                         <span class="visually-hidden">Ссылка на страницу Инстаграм</span>
                     </a>
                 </li>
                 <li>
-                    <a class="footer__link" href="#" target="_blank">
+                    <a class="footer__link-fb" href="#" target="_blank">
                         <span class="visually-hidden">Ссылка на страницу Фейсбук</span>
                     </a>
                 </li>
             </ul>
 
             <div class="footer__copyright">
-                <a href="https://htmlacademy.ru/intensive/adaptive"><img src="https://via.placeholder.com/200x18" alt="Ссылка на компанию HTML Academy"></a>
+                <p>HTML Academy</p>
+                <a href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" alt="Ссылка на компанию HTML Academy"></a>
             </div>
 
         </div>
