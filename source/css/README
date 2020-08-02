@@ -14,3 +14,39 @@ less/
 sass/
 | - style.scss
 | - [другие *.scss файлы]
+
+
+Добрый день! Подскажите пожалуйста, как связать less файл с css. Этот момент вообще не поняла, как он должен скомпелироваться в css. Потом надо получается создавать отдельный файл стиля для каждого блока? Типа шапка/мэин/футер это три файла стиля на каждую из трех страниц?
+
+
+
+// Colors
+@white: #fff;
+
+
+// Viewports
+
+@tablet-width: 750px;
+@desktop-width: 1240px;
+@mobile-width-only: 320px;
+
+@font-face {
+    font-family: "Oswald";
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src:
+      url("fonts/oswaldregular") format("woff2"),
+      url("fonts/oswaldregular.woff") format("woff");
+  }
+
+  .header__logo {
+    margin: 24px auto;
+  }
+
+  .burger {
+    visibility: hidden;
+  }
+  .menu__link {
+    display: block;
+  }

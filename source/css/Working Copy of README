@@ -1,0 +1,154 @@
+Папка для скомпилированных стилей. Файлы препроцессоров держите в другой папке. Например, для *.less используйте папку less, для *.scss используйте папку sass.
+
+Скомпилированные CSS-файлы не отправляйте в репозиторий. В репозитории должны быть только файлы препроцессора.
+
+--
+
+Структура файлов:
+
+css/
+| - style.css
+less/
+| - style.less
+| - [другие *.less файлы]
+sass/
+| - style.scss
+| - [другие *.scss файлы]
+
+
+Добрый день! Подскажите пожалуйста, как связать less файл с css. Этот момент вообще не поняла, как он должен скомпелироваться в css. Потом надо получается создавать отдельный файл стиля для каждого блока? Типа шапка/мэин/футер это три файла стиля на каждую из трех страниц?
+
+
+
+// Colors
+@white: #fff;
+
+
+// Viewports
+
+@tablet-width: 750px;
+@desktop-width: 1240px;
+@mobile-width-only: 320px;
+
+@font-face {
+    font-family: "Oswald";
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src:
+      url("fonts/oswaldregular") format("woff2"),
+      url("fonts/oswaldregular.woff") format("woff");
+  }
+
+  .header__logo {
+    margin: 24px auto;
+  }
+
+  .burger {
+    visibility: hidden;
+  }
+  .menu__link {
+    display: block;
+  }
+
+
+.palette-small {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.part {
+  display: flex;
+  flex-direction: column-reverse;
+  align-content: space-between;
+}
+
+
+
+.color-2 {
+  order: 3;
+  align-self: stretch;
+}
+
+.color-5 {
+  order: 2;
+  align-self: stretch;
+}
+
+.color-4 {
+  order: 5;
+  
+  
+}
+
+.color-6 {
+  order: 4;
+}
+
+
+.palette-box:first-child  .palette-small {
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+.palette-box:first-child .color-4 {
+    order: -1;
+    align-self: center;
+}
+.palette-box:first-child .color-3 {
+    order: 1;
+    align-self: center;
+}
+.palette-box:nth-child(2) .palette-small {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.palette-box:nth-child(2) .color-2,
+.palette-box:nth-child(2) .color-6 {
+    align-self: flex-end;
+}
+.palette-box:nth-child(3) .palette-small {
+    flex-direction: row;
+    justify-content: space-between;
+}
+.palette-box:nth-child(3) .part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.palette-box:last-of-type .palette-small {
+    flex-direction: row;
+    justify-content: space-between;
+}
+.palette-box:last-of-type .part {
+    display: flex;
+}
+ .palette-box:last-of-type .part:last-child {
+     flex-direction: column-reverse;
+     justify-content: space-between;
+ }
+
+
+
+.brick-layout {
+    width: 400px;
+    padding: 5px;
+    box-sizing: content-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brick {
+    min-height: 80px;
+    min-width: 50px;
+    flex-basis: 100px;
+    margin: 5px;
+}
+.brick:nth-child(2n) {
+    flex-grow: 1;
+}
+
+
+

@@ -1,0 +1,29 @@
+.menu {
+  .font-feature(20px);
+  font-family: "Oswald", "Tahoma", sans-serif;
+  text-transform: uppercase;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__link {
+    margin: 24px 0;
+    font-weight: 500;
+
+    ::before {
+      content: "";
+      display: block;
+      margin-bottom: 24px;
+      border: 1px solid @secondary-border;
+    }
+  }
+
+  &__link a {
+    text-decoration: none;
+    color: @black;
+    margin: 24px 0;
+  }
+}
