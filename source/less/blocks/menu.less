@@ -1,15 +1,31 @@
 .menu {
-  .font-feature(20px);
-  font-family: "Oswald", "Tahoma", sans-serif;
-  text-transform: uppercase;
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 25px;
 
   &__list {
+    .font-feature(20px);
+    font-family: "Oswald", "Tahoma", sans-serif;
+    text-transform: uppercase;
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: end;
+      margin-left: 35px;
+    }
+
+    @media (min-width: 1440px) {
+      flex-direction: row;
+      justify-content: end;
+      margin-left: 35px;
+    }
+
   }
 
-  &__link {
+  &__item {
     margin: 24px 0;
     font-weight: 500;
 
@@ -21,9 +37,11 @@
     }
   }
 
-  &__link a {
+  &__link {
     text-decoration: none;
     color: @black;
     margin: 24px 0;
   }
+
+
 }
