@@ -1,15 +1,27 @@
 .wrapper {
-  width: 280px;
+  width: 320px;
+  margin: 0 auto;
   padding: 0 20px;
+  box-sizing: border-box;
 
   @media (min-width: 768px) {
-    width: 640px;
+    width: 768px;
     padding: 0 30px;
   }
 
   @media (min-width: 1440px) {
-    width: 1220px;
+    width: 1440px;
     padding: 0 110px;
+  }
+}
+body {
+
+  @media (min-width: 1440px) {
+
+    background-image: url(../img/index-background-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    background-size: 720px 696px;
   }
 }
 *,

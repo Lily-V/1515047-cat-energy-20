@@ -1,13 +1,36 @@
 // Начните писать стили здесь
 .header {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
   text-align: center;
+  padding-top: 12px;
+
 
   &__logo {
-    width: 172px;
-    height: 57px;
-    margin: auto;
+    display: block;
+    margin-right: auto;
+    width: 190px;
+    height: 38px;
+    margin-bottom: 17px;
+
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding-top: 0;
+  }
+  .menu__logo-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 174px;
+    height: 52px;
+    align-items: center;
+  }
+
+}
+
+@media (min-width: 1440px) {
+  .menu {
+    display: flex;
+    justify-content: space-between;
   }
 }

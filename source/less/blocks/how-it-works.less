@@ -4,20 +4,173 @@
   margin-bottom: 38px;
 }
 
+.how-it-works__list {
+  list-style: none;
+  width: 280px;
+  padding: 0;
+  margin-bottom: 42px;
+}
+
 .how-it-works__item {
-  max-height: 60px;
+
   margin-bottom: 20px;
-  padding-left: 80px;
-  text-align: start;
   font-family: "Arial", sans-serif;
   .font-feature-2(14px);
-  background-image: linear-gradient(to right, @green 20%, @white 20%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
-  :last-child {
-    margin-bottom: 20px;
+  p {
+    margin-left: 20px;
+  }
+  span {
+    font-family: "Oswald", "Tahoma", sans-serif;
+    .font-feature(280px);
+    color: @grey;
+    display: none;
   }
 }
 
-.how-it-works__list {
-  list-style: none;
+@media (min-width: 768px) {
+
+  .how-it-works__list {
+    display: grid;
+    position: relative;
+    width: 708px;
+    height: 514px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 153px;
+    row-gap: 37px;
+    margin-bottom: 37px;
+
+  }
+
+  .how-it-works__item {
+    width: 230px;
+    display: grid;
+    height: 1vh;
+    grid-template-rows: 1fr 1fr;
+
+
+    p {
+      .font-feature-7(16px);
+    }
+
+    .item--leaf {
+      .position(relative);
+    }
+
+    .item--water {
+      .position(relative);
+    }
+
+    .item--fork {
+      .position(relative);
+    }
+
+    .item--weight {
+      .position(relative);
+    }
+
+    .how-it-works__square {
+      z-index: 5;
+      width: 80px;
+      height: 80px;
+    }
+
+    p {
+      margin: 31px 0 0;
+      z-index: 5;
+    }
+
+    .leaf__number {
+      .numberposition(block; absolute; 480px; -40px; 1);
+    }
+
+    .water__number {
+      .numberposition(block; absolute; 35px; -40px; 1);
+    }
+
+    .fork__number {
+      .numberposition(block; absolute; 480px; 240px; 1);
+    }
+
+    .weight__number {
+      .numberposition(block; absolute; 35px; 240px; 1);
+    }
+
+  }
+
+}
+
+@media (min-width: 1440px) {
+
+  .how-it-works {
+    margin-top: 71px;
+  }
+
+  .how-it-works__title {
+    font-family: "Oswald", "Tahoma", sans-serif;
+    .font-feature(60px);
+    margin-bottom: 32px;
+  }
+
+  .how-it-works__list {
+    display: grid;
+   /* position: relative;*/
+    /*width: 708px;*/
+    height: 514px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 94px;
+    /*row-gap: 37px;*/
+    margin-bottom: 37px;
+
+  }
+
+  .how-it-works__square {
+    width: 90px;
+    height: 90px;
+
+    .rect {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .item--leaf {
+    padding-top: 40px;
+    width: 230px;
+  }
+
+  .item--water {
+    padding-top: 40px;
+    width: 246px;
+  }
+
+  .item--fork {
+    padding-top: 40px;
+    width: 248px;
+  }
+
+  .item--weight {
+    padding-top: 40px;
+    width: 250px;
+  }
+
+  .leaf__number {
+    .numberposition(block; absolute; 480px; 0; 1);
+  }
+
+  .water__number {
+    .numberposition(block; absolute; 145px; 0; 1);
+  }
+
+  .fork__number {
+    .numberposition(block; absolute; -180px; 0; 1);
+  }
+
+  .weight__number {
+    .numberposition(block; absolute; -540px; 0; 1);
+  }
 }
