@@ -48,59 +48,117 @@
 
   .how-it-works__item {
     width: 230px;
-    display: grid;
-    height: 1vh;
-    grid-template-rows: 1fr 1fr;
 
 
     p {
       .font-feature-7(16px);
     }
 
+
     .item--leaf {
-      .position(relative);
+      position: relative;
+      z-index: 2;
+      ::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        background-color: @green;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -40px;
+        left: 0;
+      }
+
+      ::after {
+        content: "1";
+        font-size: 280px;
+        color: @grey;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        z-index: 1;
+      }
     }
 
     .item--water {
-      .position(relative);
+      position: relative;
+      z-index: 2;
+      ::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        background-color: @green;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -40px;
+        left: 0;
+      }
+
+      ::after {
+        content: "2";
+        font-size: 280px;
+        color: @grey;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        z-index: 1;
+      }
     }
 
     .item--fork {
-      .position(relative);
+      position: relative;
+      z-index: 2;
+      ::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        background-color: @green;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -40px;
+        left: 0;
+      }
+
+      ::after {
+        content: "3";
+        font-size: 280px;
+        color: @grey;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        z-index: 1;
+      }
     }
 
     .item--weight {
-      .position(relative);
-    }
+      position: relative;
+      z-index: 2;
+      ::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        background-color: @green;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -40px;
+        left: 0;
+      }
 
-    .how-it-works__square {
-      z-index: 5;
-      width: 80px;
-      height: 80px;
-    }
+      ::after {
+        content: "4";
 
-    p {
-      margin: 31px 0 0;
-      z-index: 5;
+        font-size: 280px;
+        color: @grey;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        z-index: 1;
+      }
     }
-
-    .leaf__number {
-      .numberposition(block; absolute; 480px; -40px; 1);
-    }
-
-    .water__number {
-      .numberposition(block; absolute; 35px; -40px; 1);
-    }
-
-    .fork__number {
-      .numberposition(block; absolute; 480px; 240px; 1);
-    }
-
-    .weight__number {
-      .numberposition(block; absolute; 35px; 240px; 1);
-    }
-
-  }
 
 }
 
@@ -118,59 +176,125 @@
 
   .how-it-works__list {
     display: grid;
-   /* position: relative;*/
-    /*width: 708px;*/
-    height: 514px;
+    height: 280px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: none;
     column-gap: 94px;
     /*row-gap: 37px;*/
-    margin-bottom: 37px;
+    margin-bottom: 69px;
 
   }
 
-  .how-it-works__square {
-    width: 90px;
-    height: 90px;
+  .how-it-works__item {
+    margin-top: 32px;
+    padding-top: 80px;
 
-    .rect {
-      width: 80px;
-      height: 80px;
-    }
   }
 
   .item--leaf {
-    padding-top: 40px;
-    width: 230px;
+    position: relative;
+    z-index: 2;
+    ::before {
+      content: "";
+      width: 80px;
+      height: 80px;
+      background-color: @green;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: -40px;
+      left: 0;
+    }
+
+    ::after {
+      content: "1";
+      font-size: 280px;
+      color: @grey;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      z-index: 1;
+    }
   }
 
   .item--water {
-    padding-top: 40px;
-    width: 246px;
+    position: relative;
+    z-index: 2;
+    ::before {
+      content: "";
+      width: 80px;
+      height: 80px;
+      background-color: @green;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: -40px;
+      left: 0;
+    }
+
+    ::after {
+      content: "2";
+      font-size: 280px;
+      color: @grey;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      z-index: 1;
+    }
   }
 
   .item--fork {
-    padding-top: 40px;
-    width: 248px;
+    position: relative;
+    z-index: 2;
+    ::before {
+      content: "";
+      width: 80px;
+      height: 80px;
+      background-color: @green;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: -40px;
+      left: 0;
+    }
+
+    ::after {
+      content: "3";
+      font-size: 280px;
+      color: @grey;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      z-index: 1;
+    }
   }
 
   .item--weight {
-    padding-top: 40px;
-    width: 250px;
+    position: relative;
+    z-index: 2;
+    ::before {
+      content: "";
+      width: 80px;
+      height: 80px;
+      background-color: @green;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: -40px;
+      left: 0;
+    }
+
+    ::after {
+      content: "4";
+
+      font-size: 280px;
+      color: @grey;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      z-index: 1;
+    }
   }
 
-  .leaf__number {
-    .numberposition(block; absolute; 480px; 0; 1);
-  }
-
-  .water__number {
-    .numberposition(block; absolute; 145px; 0; 1);
-  }
-
-  .fork__number {
-    .numberposition(block; absolute; -180px; 0; 1);
-  }
-
-  .weight__number {
-    .numberposition(block; absolute; -540px; 0; 1);
-  }
+}
 }

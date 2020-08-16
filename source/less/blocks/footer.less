@@ -20,22 +20,32 @@
   &__social {
 
     margin-top: 20px;
-    /*display: flex;
-    justify-content: space-around;*/
-
+    width: 130px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     border-bottom: 1px solid @secondary-border;
 
     &__link-vk {
       display: block;
+      width: 23px;
+      height: 16px;
       background: url("../../img/icon-vk.svg");
     }
 
     &__link-ig {
+      display: block;
+      width: 16px;
+      height: 16px;
       background: url("../../img/icon-insta.svg");
     }
 
     &__link-fb {
+      display: block;
+      width: 23px;
+      height: 16px;
       background: url("../../img/icon-fb.svg");
     }
 
@@ -58,4 +68,11 @@
       margin-left: 70px;
     }
   }
+}
+
+@media (min-width: 768px) {
+.footer--wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 }

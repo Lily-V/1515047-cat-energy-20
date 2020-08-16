@@ -1,11 +1,11 @@
 .button {
   display: block;
   width: 280px;
+  height: 40px;
   margin: 15px auto;
   padding: 10px 0;
+  cursor: pointer;
   font-family: "Oswald", "Tahoma", sans-serif;
-  color: @white;
-  font-weight: 400;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
@@ -14,6 +14,15 @@
 
 .button--green {
   background-color: @green;
+  color: @white;
+
+  @media (min-width: 768px) {
+    width: 248px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 168px;
+  }
 }
 
 .button--grey {
@@ -23,4 +32,12 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
+
+  @media (min-width: 768px) {
+    width: 248px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 168px;
+  }
 }
