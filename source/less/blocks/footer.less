@@ -3,76 +3,125 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: @grey;
+}
 
+  .footer__title {
 
-  &__title {
-    display: block;
-    width: 128px;
-    height: 24px;
-    padding-top: 39px;
-    padding-bottom: 32px;
+    width: 320px;
+    padding: 39px 0 32px;
+
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     border-bottom: 1px solid @secondary-border;
+
+    img {
+      width: 128px;
+      height: auto;
+    }
   }
 
-  &__social {
-
-    margin-top: 20px;
-    width: 130px;
-    height: 22px;
+  .footer__social {
+    width: 320px;
+    padding: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     list-style: none;
     border-bottom: 1px solid @secondary-border;
+  }
 
-    &__link-vk {
+
+    .footer__link-vk {
       display: block;
       width: 23px;
       height: 16px;
-      background: url("../../img/icon-vk.svg");
+      background-image: url("../img/icon-vk.svg");
+      background-repeat: no-repeat;
+
     }
 
-    &__link-ig {
+    .footer__link-ig {
       display: block;
       width: 16px;
       height: 16px;
-      background: url("../../img/icon-insta.svg");
+      background-image: url("../img/icon-insta.svg");
+      background-repeat: no-repeat;
     }
 
-    &__link-fb {
+    .footer__link-fb {
       display: block;
       width: 23px;
       height: 16px;
-      background: url("../../img/icon-fb.svg");
+      background-image: url("../img/icon-fb.svg");
+      background-repeat: no-repeat;
     }
 
-  }
 
-  &__copyright {
+
+    .footer__copyright {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
 
     p {
       font-family: "Arial", sans-serif;
       .font-feature-5(14px);
       color: @dark-grey;
-      margin-right: 70px;
+
     }
 
     a {
       width: 27px;
       height: 34px;
-      margin-left: 70px;
+
     }
   }
-}
+
 
 @media (min-width: 768px) {
-.footer--wrapper {
+.wrapper--footer {
   display: flex;
   justify-content: space-between;
+  padding: 55px 30px 61px;
 }
+
+.footer__title {
+
+  width: auto;
+  margin: 0;
+}
+
+.footer__social li a{
+  margin: 0;
+}
+
+.footer__link-vk {
+  display: block;
+  width: 30px;
+  height: 22px;
+
+}
+
+.footer__link-ig {
+  display: block;
+  width: 23px;
+  height: 23px;
+
+}
+
+.footer__link-fb {
+  display: block;
+  width: 28px;
+  height: 33px;
+
+}
+
+.footer__copyright p {
+  font-family: "Arial", sans-serif;
+  .font-feature-5(16px);
+  margin-right: 22px;
+}
+
 }
