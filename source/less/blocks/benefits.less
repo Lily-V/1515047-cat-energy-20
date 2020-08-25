@@ -1,60 +1,90 @@
 .benefits {
   font-family: "Arial", sans-serif;
+}
 
+.benefits__block {
+  display: flex;
+  flex-direction: column;
+  background: @grey;
+  padding: 20px;
+  margin-bottom: 30px;
+}
 
-  &__block {
-    display: flex;
-    flex-direction: column;
-    background: @grey;
-    padding: 20px;
-    margin-bottom: 30px;
-  }
+.benefits__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 22px;
+}
 
-  &__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    margin-bottom: 22px;
-  }
+.benefits__title {
+  font-family: "Oswald", "Tahoma", sans-serif;
+  .font-feature-3(24px);
+  text-transform: uppercase;
+  margin-left: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
-  &__title {
-    font-family: "Oswald", "Tahoma", sans-serif;
-    .font-feature-3(24px);
+.benefits__text {
+  font-family: "Arial", sans-serif;
+  .font-feature-2(14px);
+  padding-bottom: 23px;
+  border-bottom: 1px solid @main-border;
+  margin: 0;
+}
+
+.benefits__link {
+  margin-top: 15px;
+  display: flex;
+  justify-content: start;
+  font-family: "Oswald", "Tahoma", sans-serif;
+  text-decoration: none;
+  color: @black;
+  align-items: center;
+
+  span {
+    .font-feature(16px);
     text-transform: uppercase;
-    margin-left: 19px;
-    margin-top: 0;
-    margin-bottom: 0;
   }
 
-  &__text {
-    font-family: "Arial", sans-serif;
-    .font-feature-2(14px);
-    padding-bottom: 23px;
-    border-bottom: 1px solid @main-border;
-    margin: 0;
-  }
-
-  &__link {
-    margin-top: 15px;
-    display: flex;
-    justify-content: start;
-    font-family: "Oswald", "Tahoma", sans-serif;
-    text-decoration: none;
-    color: @black;
-    align-items: center;
-
-    span {
-      .font-feature(16px);
-      text-transform: uppercase;
-    }
-
-    img {
-      width: 32px;
-      height: 10px;
-      margin-left: 17px;
-    }
+  img {
+    width: 32px;
+    height: 10px;
+    margin-left: 17px;
   }
 }
+
+.benefits__round {
+  position: relative;
+}
+
+  .round--slim::after {
+    content: "";
+    width: 36px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    background-image: url(../img/icon-cat-slim.svg);
+    background-repeat: no-repeat;
+    z-index: 10;
+  }
+
+  .round--pro::after {
+    content: "";
+    width: 67px;
+    height: 28px;
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: -8px;
+    background-image: url(../img/icon-cat-pro.svg);
+    background-repeat: no-repeat;
+    z-index: 10;
+  }
+
 
 @media (min-width: 768px) {
   .benefits {
@@ -73,20 +103,42 @@
   }
 
   .benefits__block {
-    padding: 77px 62px 53px 53px;
+    padding: 77px 62px 53px 52px;
   }
 
-  .round--slim {
+  .benefits__round {
     position: absolute;
     top: 77px;
-    left: 475px;
+    left: 450px;
   }
 
-  .round--pro {
+  .round--slim::after {
+    content: "";
+    width: 140px;
+    height: 192px;
+    display: block;
     position: absolute;
-    top: 77px;
-    left: 475px;
+    top: -5px;
+    left: 30px;
+    background-image: url(../img/icon-cat-slim.svg);
+    background-repeat: no-repeat;
+    z-index: 10;
   }
+
+  .round--pro::after {
+    content: "";
+    width: 268px;
+    height: 112px;
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: -35px;
+    background-image: url(../img/icon-cat-pro.svg);
+    background-repeat: no-repeat;
+    z-index: 10;
+  }
+
+
 
   .benefits__img {
     width: 200px;
@@ -95,20 +147,22 @@
 
   .benefits__title {
     .font-feature(36px);
+    margin-left: 0;
   }
 
   .benefits__text {
     .font-feature-7(16px);
     width: 370px;
-    margin-left: 17px;
+
   }
 
   .benefits__link {
-    margin-left: 17px;
+    margin-left: 0;
 
 
   span {
     .font-feature-8(20px);
+
   }
 
   .benefits__link img {
@@ -149,6 +203,32 @@
 
   .benefits__round {
     position: inherit;
+  }
+
+  .round--slim::after {
+    content: "";
+    width: 70px;
+    height: 97px;
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 65px;
+    background-image: url(../img/icon-cat-slim.svg);
+    background-repeat: no-repeat;
+    z-index: 10;
+  }
+
+  .round--pro::after {
+    content: "";
+    width: 134px;
+    height: 56px;
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 35px;
+    background-image: url(../img/icon-cat-pro.svg);
+    background-repeat: no-repeat;
+    z-index: 10;
   }
 
   .benefits__img {

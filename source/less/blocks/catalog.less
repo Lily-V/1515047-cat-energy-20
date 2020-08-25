@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
 
+
 &__title {
   font-family: "Oswald", "Tahoma", sans-serif;
   font-style: normal;
@@ -28,8 +29,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 13px;
   padding-top: 11px;
+  padding-bottom: 25px;
   border-bottom: 1px solid @secondary-border;
 
   &__content {
@@ -67,7 +69,7 @@
     .font-feature-2(12px);
     color: @dark-grey;
     margin-top: 19px;
-    margin-bottom: 13px;
+    padding-bottom: 9px;
 
     dt,
     dd{
@@ -88,6 +90,8 @@
         text-align: right;
     }
   }
+
+
 
   &__more {
     padding-top: 79px;
@@ -154,6 +158,10 @@
 
   .product-card__wrapper {
     margin-top: 34px;
+  }
+
+  .product-card__img {
+    background-color: @grey;
   }
 
   .product-card__name {

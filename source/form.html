@@ -29,13 +29,130 @@
                         <a class="menu__link" href="catalog.html">каталог продукции</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="form.html">подбор программы</a>
+                        <a class="menu__link menu__link--active" href="form.html">подбор программы</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!--Main-->
+    <main class="main">
+
+        <!--Form-->
+        <section class="form">
+            <div class="wrapper">
+                <h1 class="form__title">Подбор программы</h1>
+                <p class="form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+
+                <form class="form__wrapper" action="/" method="post">
+                    <div class="sections-container">
+                        <div class="form__section">
+                            <p class="form__item">
+                                <label class="item__label" for="input__name">имя:*</label>
+                                <input class="input input--name" type="text" name="name" placeholder="Барсик" id="input__name">
+                            </p>
+                            <p class="form__item">
+                                <label class="item__label" for="input__weight">вес (кг):*</label>
+                                <input class="input input--weight" type="text" name="weight" placeholder="7" id="input__weight">
+                            </p>
+                            <p class="form__item">
+                                <label class="item__label" for="input__age">возраст (лет):</label>
+                                <input class="input input--age" type="text" name="age" placeholder="7" id="input__age">
+                            </p>
+                        </div>
+
+                        <div class="form__section section--radio">
+                            <p class="form__item item--position">
+                                <input class="form__radio" type="radio" name="choose__goal" checked id="input__weightloss">
+                                <label class="item__label" for="input__weightloss">похудение</label>
+                            </p>
+                            <p class="form__item item--position">
+                                <input class="form__radio" type="radio" name="choose__goal" id="input__weightgain">
+                                <label class="item__label" for="input__weightgain">набор массы</label>
+                            </p>
+                            <p class="form__item item--position">
+                                <input class="form__radio" type="radio" name="choose__goal" id="input__advice">
+                                <label class="item__label" for="input__advice">не знаю (Нужен ваш совет)</label>
+                            </p>
+                        </div>
+                    </div>
+                    <p class="form__name name--data">Контактные данные (владельца кота)</p>
+                    <div class="data-container">
+                        <p class="form__item">
+                            <label class="item__label" for="input__email">e-mail:*</label>
+                            <input class="input input--email" type="text" name="email" placeholder="kuklachev@gmail.com" id="input__email">
+                        </p>
+                        <p class="form__item">
+                            <label class="item__label data__label" for="input__phone">телефон:*</label>
+                            <input class="input input--phone" type="text" name="phone" placeholder="8 (960) 900-60-90" id="input__phone">
+                        </p>
+                    </div>
+                    <p class="form__name name--textarea">Комментарий</p>
+                    <p class="form__item item--textarea">
+                        <textarea class="input form__textarea" name="text" placeholder="расскажите обо всех повадках кота"></textarea>
+                    </p>
+
+                    <div class="form__extra">
+                        <p class="form__name name--extra">Дополнительно</p>
+                        <div class="extra-container">
+                            <p class="form__item item--position">
+                                <input class="form__checkbox" type="checkbox" name="choose__sugarsub" checked id="input__sugarsub">
+                                <label class="item__label" for="input__sugarsub">сахарозаменитель</label>
+                            </p>
+                            <p class="form__item item--position">
+                                <input class="form__checkbox" type="checkbox" name="choose__water" id="input__water">
+                                <label class="item__label" for="input__water">питьевая вода</label>
+                            </p>
+                            <p class="form__item item--position">
+                                <input class="form__checkbox" type="checkbox" name="choose__milk" id="input__milk">
+                                <label class="item__label" for="input__milk">молоко</label>
+                            </p>
+                            <p class="form__item item--position">
+                                <input class="form__checkbox" type="checkbox" name="choose__vitamins" id="input__vitamins">
+                                <label class="item__label" for="input__vitamins">витамины</label>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="button-container">
+                        <button class="form__button button button--green" type="button">отправить заявку</button>
+
+                        <span class="form__notice">* — Обязательные поля</span>
+                    </div>
+                </form>
+
+            </div>
+            <!--wrapper-->
+        </section>
+        <!--form-->
+
+
+        <!--Map-->
+        <section class="map">
+            <div class="wrapper map--wrapper">
+                <div class="map__container">
+                    <span class="map__text">приглашаем к сотрудничеству дилеров!
+                </span>
+                    <address class="map__address">
+                  <span>ул. Большая Конюшенная, д. 19/8</span>
+                  <span>Санкт-Петербург</span>
+                </address>
+                </div>
+            </div>
+            <div class="map__img">
+                <span class="visually-hidden">Карта Санкт-Петербурга с отметкой о нашем местонахождении</span>
+            </div>
+            <div class="map__pin-wrapper>
+          <img class=" map__pin " src="https://via.placeholder.com/56x52 " usemap="#location ">
+          <span class="visually-hidden ">"Отметка нашего местонахождения по адресу: ул. Большая Конюшенная, д. 19/8</span>
+            </div>
+            <div class="map__location">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aee017cc118ef457883f3de7de363d0fda0d2eae1a1d0f4d56fdaae902ed1f0e8&amp;source=constructor" width="320" height="362" frameborder="0"></iframe>
+            </div>
+
+        </section>
+    </main>
 
     <!--Footer-->
     <footer class="footer">

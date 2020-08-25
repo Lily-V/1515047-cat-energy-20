@@ -1,6 +1,6 @@
 
 .how-it-works__title {
-  font-family: "Oswald", "Tahoma", sans-serif;
+
   .font-feature-4(36px);
   margin-bottom: 38px;
 }
@@ -28,7 +28,7 @@
     height: auto;
   }
   span {
-    font-family: "Oswald", "Tahoma", sans-serif;
+
     .font-feature(280px);
     color: @grey;
     display: none;
@@ -43,6 +43,27 @@
     background-repeat: no-repeat;
     top: -40px;
     left: 0;
+  }
+
+  .item--leaf::before {
+    background-image: url(../img/advantage-leaf@1x.png);
+    background-position: center center;
+
+  }
+
+  .item--water::before  {
+    background-image: url(../img/advantage-powder@1x.png);
+    background-position: center center;
+  }
+
+  .item--fork::before  {
+    background-image: url(../img/advantage-dining@1x.png);
+    background-position: center center;
+  }
+
+  .item--weight::before  {
+    background-image: url(../img/advantage-clock@1x.png);
+    background-position: center center;
   }
 
 
@@ -122,7 +143,7 @@
   }
 
   .how-it-works__title {
-    font-family: "Oswald", "Tahoma", sans-serif;
+
     .font-feature(60px);
     margin-bottom: 32px;
   }
