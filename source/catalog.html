@@ -23,10 +23,10 @@
 
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a class="menu__link">главная</a>
+                        <a class="menu__link" href="index.html">главная</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link menu__link--active" href="catalog.html">каталог продукции</a>
+                        <a class="menu__link menu__link--active">каталог продукции</a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link" href="form.html">подбор программы</a>
@@ -45,7 +45,7 @@
 
 
         <div class="wrapper">
-            <h1 class="catalog__title">Каталог продукции</h1>
+            <h1 class="wrapper__title">Каталог продукции</h1>
             <section class="catalog">
 
 
@@ -249,7 +249,7 @@
                     <li class="catalog__item product-card product-card__more">
                         <p class="product-card__title">Показать еще 100500 товаров</p>
                         <p class="product-card__subtitle">На самом деле вкусов гораздо больше!</p>
-                        <a class="product-card__button--more button  button--grey" href="#">показать все</a>
+                        <a class="product-card__button-more button  button--grey" href="#">показать все</a>
                     </li>
                 </ul>
 
@@ -261,11 +261,11 @@
             <div class="wrapper">
 
                 <h2 class="extra-products__title">Дополнительные товары</h2>
-                <div class="extra-product__container">
+                <div class="extra-products__container">
                     <ul class="extra-products__list">
                         <li class="extra-products__item">
                             <div class="extra-products__wrapper">
-                                <h3 class="extra-products__text">cахарозаменитель</h3>
+                                <h3 class="extra-products__name">cахарозаменитель</h3>
                                 <dl class="extra-products__content">
                                     <dt>1 упаковка (100 г)</dt>
                                     <dd>200 Р.</dd>
@@ -276,7 +276,7 @@
 
                         <li class="extra-products__item">
                             <div class="extra-products__wrapper">
-                                <h3 class="extra-products__text">питьевая вода</h3>
+                                <h3 class="extra-products__name">питьевая вода</h3>
                                 <dl class="extra-products__content">
                                     <dt>5 литров</dt>
                                     <dd>50 Р.</dd>
@@ -287,7 +287,7 @@
 
                         <li class="extra-products__item">
                             <div class="extra-products__wrapper">
-                                <h3 class="extra-products__text">молоко</h3>
+                                <h3 class="extra-products__name">молоко</h3>
                                 <dl class="extra-products__content ">
                                     <dt>1 литр</dt>
                                     <dd>100 Р.</dd>
@@ -298,7 +298,7 @@
 
                         <li class="extra-products__item">
                             <div class="extra-products__wrapper">
-                                <h3 class="extra-products__text">витамины</h3>
+                                <h3 class="extra-products__name">витамины</h3>
                                 <dl class="extra-products__content">
                                     <dt>1 упаковка (30 г)</dt>
                                     <dd>300 Р.</dd>
@@ -309,7 +309,7 @@
                     </ul>
 
                     <div class="extra-products__gift">
-                        <div class="gift__text">
+                        <div class="extra-products__text">
                             <p>Закажите все <br> и получите чехол для кота в подарок!</p>
                         </div>
                     </div>
@@ -322,7 +322,7 @@
 
         <!--Map-->
         <section class="map">
-            <div class="wrapper map--wrapper">
+            <div class="wrapper">
                 <div class="map__container">
                     <span class="map__text">приглашаем к сотрудничеству дилеров!
                   </span>
@@ -335,14 +335,13 @@
             <div class="map__img">
                 <span class="visually-hidden">Карта Санкт-Петербурга с отметкой о нашем местонахождении</span>
             </div>
-            <div class="map__pin-wrapper>
-            <img class=" map__pin " src="https://via.placeholder.com/56x52 " usemap="#location ">
-            <span class="visually-hidden ">"Отметка нашего местонахождения по адресу: ул. Большая Конюшенная, д. 19/8</span>
-            </div>
+            <!--<div class="map__pin-wrapper">
+                <img class="map__pin" src="https://via.placeholder.com/56x52">
+                <span class="visually-hidden">Отметка нашего местонахождения по адресу: ул. Большая Конюшенная, д. 19/8</span>
+            </div>-->
             <div class="map__location">
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aee017cc118ef457883f3de7de363d0fda0d2eae1a1d0f4d56fdaae902ed1f0e8&amp;source=constructor" width="320" height="362" frameborder="0"></iframe>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aee017cc118ef457883f3de7de363d0fda0d2eae1a1d0f4d56fdaae902ed1f0e8&amp;source=constructor" width="320" height="362"></iframe>
             </div>
-
         </section>
     </main>
 

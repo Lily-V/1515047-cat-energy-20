@@ -23,13 +23,13 @@
 
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a class="menu__link">главная</a>
+                        <a class="menu__link" href="index.html">главная</a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link" href="catalog.html">каталог продукции</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link menu__link--active" href="form.html">подбор программы</a>
+                        <a class="menu__link menu__link--active">подбор программы</a>
                     </li>
                 </ul>
             </nav>
@@ -47,70 +47,73 @@
 
                 <form class="form__wrapper" action="/" method="post">
                     <div class="sections-container">
-                        <div class="form__section section--input">
-                            <p class="form__item item--input">
-                                <label class="input__label" for="input__name">имя:*</label>
+                        <div class="form__section form-input">
+
+                            <p class="form__item item-input">
+                                <label class="item-input__label item-input__label--name" for="input__name">имя:*</label>
                                 <input class="input input--name" type="text" name="name" placeholder="Барсик" id="input__name">
                             </p>
-                            <p class="form__item item--input">
-                                <label class="input__label" for="input__weight">вес (кг):*</label>
+                            <p class="form__item item-input">
+                                <label class="item-input__label item-input__label--weight" for="input__weight">вес (кг):*</label>
                                 <input class="input input--weight" type="text" name="weight" placeholder="7" id="input__weight">
                             </p>
-                            <p class="form__item item--input">
-                                <label class="input__label" for="input__age">возраст (лет):</label>
+                            <p class="form__item item-input">
+                                <label class="item-input__label item-input__label--age" for="input__age">возраст (лет):</label>
                                 <input class="input input--age" type="text" name="age" placeholder="7" id="input__age">
                             </p>
                         </div>
 
-                        <div class="form__section section--radio">
-                            <p class="form__item item--position">
-                                <input class="form__radio" type="radio" name="choose__goal" checked id="input__weightloss">
-                                <label class="item__label label--radio" for="input__weightloss">похудение</label>
-                            </p>
-                            <p class="form__item item--position">
-                                <input class="form__radio" type="radio" name="choose__goal" id="input__weightgain">
-                                <label class="item__label label--radio" for="input__weightgain">набор массы</label>
-                            </p>
-                            <p class="form__item item--position">
-                                <input class="form__radio" type="radio" name="choose__goal" id="input__advice">
-                                <label class="item__label label--radio" for="input__advice">не знаю (Нужен ваш совет)</label>
-                            </p>
+                        <ul class="form__section form__section--radio">
+                            <li class="form__item form__item--position">
+                                <input class="form__radio visually-hidden" type="radio" name="choose__goal" checked id="input__weightloss">
+                                <label class="form__label form__label--radio" for="input__weightloss">похудение</label>
+                            </li>
+                            <li class="form__item form__item--position">
+                                <input class="form__radio visually-hidden" type="radio" name="choose__goal" id="input__weightgain">
+                                <label class="form__label form__label--radio" for="input__weightgain">набор массы</label>
+                            </li>
+                            <li class="form__item form__item--position">
+                                <input class="form__radio visually-hidden" type="radio" name="choose__goal" id="input__advice">
+                                <label class="form__label form__label--radio" for="input__advice">не знаю (Нужен ваш совет)</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="form__name form__name--data">Контактные данные (владельца кота)</p>
+                    <div class="data-container">
+                        <div class="form__item form__item--data form__item--email">
+                            <label class="form__data-label form__data-label--data" for="input__email">e-mail:*</label>
+                            <div class="input-castom input-castom--email">
+                                <input class="input input--email" type="text" name="email" placeholder="kuklachev@gmail.com" id="input__email"></div>
+                        </div>
+                        <div class="form__item form__item--data">
+                            <label class="form__data-label form__data-label--data" for="input__phone">телефон:*</label>
+                            <div class="input-castom input-castom--phone">
+                                <input class="input input--phone" type="text" name="phone" placeholder="8 (960) 900-60-90" id="input__phone"></div>
                         </div>
                     </div>
-                    <p class="form__name name--data">Контактные данные (владельца кота)</p>
-                    <div class="data-container">
-                        <p class="form__item item--data">
-                            <label class="input__label label--data" for="input__email">e-mail:*</label>
-                            <input class="input input--email" type="text" name="email" placeholder="kuklachev@gmail.com" id="input__email">
-                        </p>
-                        <p class="form__item item--data">
-                            <label class="input__label label--data" for="input__phone">телефон:*</label>
-                            <input class="input input--phone" type="text" name="phone" placeholder="8 (960) 900-60-90" id="input__phone">
-                        </p>
-                    </div>
-                    <p class="form__name name--textarea">Комментарий</p>
-                    <p class="form__item item--textarea">
+                    <p class="form__name form__name--textarea">Комментарий</p>
+                    <p class="form__item form__item--textarea">
                         <textarea class="input form__textarea" name="text" placeholder="расскажите обо всех повадках кота"></textarea>
                     </p>
 
                     <div class="form__extra">
-                        <p class="form__name name--extra">Дополнительно</p>
+                        <p class="form__name form__name--extra">Дополнительно</p>
                         <div class="extra-container">
-                            <p class="form__item item--position">
+                            <p class="form__item form__item--position">
                                 <input class="form__checkbox" type="checkbox" name="choose__sugarsub" checked id="input__sugarsub">
-                                <label class="item__label" for="input__sugarsub">сахарозаменитель</label>
+                                <label class="form__label" for="input__sugarsub">сахарозаменитель</label>
                             </p>
-                            <p class="form__item item--position">
+                            <p class="form__item form__item--position">
                                 <input class="form__checkbox" type="checkbox" name="choose__water" id="input__water">
-                                <label class="item__label" for="input__water">питьевая вода</label>
+                                <label class="form__label" for="input__water">питьевая вода</label>
                             </p>
-                            <p class="form__item item--position">
+                            <p class="form__item form__item--position">
                                 <input class="form__checkbox" type="checkbox" name="choose__milk" id="input__milk">
-                                <label class="item__label" for="input__milk">молоко</label>
+                                <label class="form__label" for="input__milk">молоко</label>
                             </p>
-                            <p class="form__item item--position">
+                            <p class="form__item form__item--position">
                                 <input class="form__checkbox" type="checkbox" name="choose__vitamins" id="input__vitamins">
-                                <label class="item__label" for="input__vitamins">витамины</label>
+                                <label class="form__label" for="input__vitamins">витамины</label>
                             </p>
                         </div>
                     </div>
@@ -130,7 +133,7 @@
 
         <!--Map-->
         <section class="map">
-            <div class="wrapper map--wrapper">
+            <div class="wrapper">
                 <div class="map__container">
                     <span class="map__text">приглашаем к сотрудничеству дилеров!
                 </span>
@@ -143,14 +146,13 @@
             <div class="map__img">
                 <span class="visually-hidden">Карта Санкт-Петербурга с отметкой о нашем местонахождении</span>
             </div>
-            <div class="map__pin-wrapper>
-          <img class=" map__pin " src="https://via.placeholder.com/56x52 " usemap="#location ">
-          <span class="visually-hidden ">"Отметка нашего местонахождения по адресу: ул. Большая Конюшенная, д. 19/8</span>
-            </div>
+            <!--<div class="map__pin-wrapper">
+                <img class="map__pin" src="https://via.placeholder.com/56x52">
+                <span class="visually-hidden">Отметка нашего местонахождения по адресу: ул. Большая Конюшенная, д. 19/8</span>
+            </div>-->
             <div class="map__location">
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aee017cc118ef457883f3de7de363d0fda0d2eae1a1d0f4d56fdaae902ed1f0e8&amp;source=constructor" width="320" height="362" frameborder="0"></iframe>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aee017cc118ef457883f3de7de363d0fda0d2eae1a1d0f4d56fdaae902ed1f0e8&amp;source=constructor" width="320" height="362"></iframe>
             </div>
-
         </section>
     </main>
 
