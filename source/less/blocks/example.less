@@ -3,6 +3,7 @@
 .example {
   padding-top: 27px;
   padding-bottom: 25px;
+  min-width: 320px;
   background-color: @example-bgr;
 
 }
@@ -91,6 +92,7 @@ flex-wrap: wrap;
 @media (min-width: 768px){
 
   .example {
+    min-width: 768px;
     padding-top: 43px;
     padding-bottom: 67px;
     border-top: 1px solid @secondary-border;
@@ -138,8 +140,9 @@ flex-wrap: wrap;
 
 @media (min-width: 1440px) {
   .example {
+    min-width: 1440px;
     background-image: linear-gradient(to top, @grey 70%, @white 30%);
-
+    border: none;
   }
 
   .wrapper--example {
