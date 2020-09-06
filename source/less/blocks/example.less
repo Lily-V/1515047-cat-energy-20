@@ -211,7 +211,7 @@
 
   .example__slide--before {
     width: 50%;
-    left: 0;
+    left: 20px;
   }
 
   .example__scale {
@@ -275,7 +275,7 @@
 @media (min-width: 1440px) {
   .example {
     min-width: 1440px;
-    background-image: linear-gradient(to bottom, @white 30%, transparent 30%), linear-gradient(to right, @grey 50%, @example-bgr 30%);
+    background-image: linear-gradient(to bottom, @white 25%, transparent 25%), linear-gradient(to right, @grey 50%, @example-bgr 30%);
     border: none;
 
   }
@@ -314,21 +314,17 @@
   }
 
   .example__slider {
-    padding-top: 39px;
+    padding: 0;
   }
 
   .example__slide--before {
-    background-color: linear-gradient(to bottom, @white 30%, @example-bgr 30%);
-    top: 39px;
+    background-color: linear-gradient(to bottom, @white 15%, @example-bgr 15%);
+
     left: -20px;
   }
 
   .example__slide--after {
-    background-color: linear-gradient(to bottom, @white 30%, @grey 30%);
-  }
-
-  .example__range {
-    padding-top: 170px;
+    background-color: linear-gradient(to bottom, @white 15%, @grey 15%);
   }
 
 }
