@@ -2,10 +2,9 @@
 
 .example {
   padding-top: 27px;
-  padding-bottom: 25px;
+
   min-width: 320px;
   background-color: @example-bgr;
-
 }
 
 .example__title {
@@ -22,10 +21,11 @@
   text-align: left;
   margin: 33px 0 26px;
 }
+
 .example__stat {
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .example__result {
@@ -44,7 +44,6 @@ flex-wrap: wrap;
   border-radius: 5px;
   text-align: center;
   padding: 15px;
-
 }
 
 .example__text {
@@ -66,37 +65,101 @@ flex-wrap: wrap;
 }
 
 .example__slider {
-  overflow: hidden;
+  padding-bottom: 25px;
+  position: relative;
 }
 
 .example__slide {
-  width: 311px;
-  height: 232px;
+  background: @example-bgr;
 }
 
-
-.example__buttons {
-  margin-top: 23px;
-  text-align: center;
-
+.example__slide--before {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  overflow: hidden;
 }
 
-.example__button {
-  .font-feature-2(16px);
+.example__range {
+  margin: 23px 14px;
+}
+
+.example__range-wrapper {
+  padding: 10px 84px;
+  position: relative;
+}
+
+.example__scale {
+  height: 14px;
+  padding: 2px;
+  background-color: @white;
+  box-sizing: border-box;
+  border-radius: 10px;
+  position: relative;
+}
+
+.example__scale::before {
+  content: "было";
+  position: absolute;
+  top: -6px;
+    left: -50px;
+  width: 50px;
+  height: 30px;
+  padding: 2px;
+  color: @black;
   text-transform: uppercase;
-  border: none;
-  font-family: "Oswald", "Tahoma", sans-serif;
   background-color: @example-bgr;
 }
+
+.example__scale::after {
+  content: "стало";
+  position: absolute;
+  top: -6px;
+  right: -60px;
+  width: 50px;
+  height: 30px;
+  padding: 2px;
+  color: @black;
+  text-transform: uppercase;
+  background-color: @example-bgr;
+}
+
+.example__scale-bar {
+  height: 10px;
+  width: 50%;
+  border-radius: 10px;
+  background-color: @green;
+  box-sizing: border-box;
+}
+
+.example__scale-handle {
+ /* position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  box-sizing: content-box;
+  padding: 0;
+  /*border: 8px solid red;
+  border-radius: 50%;
+  background-color: @green;
+  cursor: pointer;*/
+  display: none;
+}
+
+
+
 
 @media (min-width: 768px){
 
   .example {
     min-width: 768px;
     padding-top: 43px;
-    padding-bottom: 67px;
+    padding-bottom: 0;
     border-top: 1px solid @secondary-border;
-    background-image: linear-gradient(to bottom, @white 50%, @example-bgr 50%);
+    background-color: transparent;
+    overflow: hidden;
   }
 
   .example__title {
@@ -109,12 +172,12 @@ flex-wrap: wrap;
 
   .example {
     padding-top: 43px;
-    padding-bottom: 67px;
+
   }
 
   .example__stat {
     display: grid;
-    grid-template-columns: 162px 162px 174px;
+    grid-template-columns: min-content min-content 1fr;
     gap: 42px;
     margin-bottom: 54px;
   }
@@ -123,7 +186,6 @@ flex-wrap: wrap;
     top: 85%;
     left: auto;
     background-color: @white;
-
   }
 
   .example__price {
@@ -133,16 +195,89 @@ flex-wrap: wrap;
     margin-top: 15px;
   }
 
-  .example__slide {
-    margin: 0 auto;
+  .example__slider {
+    text-align: center;
+    background: linear-gradient(180deg, @white 100px, @grey 100px);
   }
+
+  .example__slide {
+    background: linear-gradient(180deg, @white 100px, @grey 100px);
+  }
+
+  .example__slide img {
+    max-width: none;
+    height: auto;
+  }
+
+  .example__slide--before {
+    width: 50%;
+    left: 0;
+  }
+
+  .example__scale {
+    width: 428px;
+    height: 6px;
+    margin: 0 auto;
+    background-color: @scale-border;
+    border-radius: 6px;
+    position: relative;
+  }
+
+  .example__scale::before {
+    top: -12px;
+    left: -70px;
+    width: 45px;
+    padding: 0;
+    background: @grey;
+    border-bottom: 1px @scale-border dashed;
+  }
+
+  .example__scale::after {
+    top: -12px;
+    right: -70px;
+    width: 45px;
+    padding: 0;
+    background: @grey;
+    border-bottom: 1px @scale-border dashed;
+
+  }
+
+  .example__scale-bar {
+    height: 10px;
+    width: 50%;
+    border-radius: 10px;
+    background-color: @green;
+    box-sizing: border-box;
+  }
+
+  .example__scale-bar {
+    display: none;
+  }
+
+  .example__scale-handle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 34px;
+    box-sizing: content-box;
+    padding: 0;
+    border: 1px solid @scale-border;
+    border-radius: 50%;
+    background-color: @white;
+    cursor: pointer;
+    display: block;
+  }
+
 }
 
 @media (min-width: 1440px) {
   .example {
     min-width: 1440px;
-    background-image: linear-gradient(to top, @grey 70%, @white 30%);
+    background-image: linear-gradient(to bottom, @white 30%, transparent 30%), linear-gradient(to right, @grey 50%, @example-bgr 30%);
     border: none;
+
   }
 
   .wrapper--example {
@@ -156,6 +291,7 @@ flex-wrap: wrap;
 
   .example__explain {
     width: 436px;
+    margin-bottom: 69px;
   }
 
   .example__stat {
@@ -175,6 +311,24 @@ flex-wrap: wrap;
 
   .example__price span {
     margin-right: 69px;
+  }
+
+  .example__slider {
+    padding-top: 39px;
+  }
+
+  .example__slide--before {
+    background-color: linear-gradient(to bottom, @white 30%, @example-bgr 30%);
+    top: 39px;
+    left: -20px;
+  }
+
+  .example__slide--after {
+    background-color: linear-gradient(to bottom, @white 30%, @grey 30%);
+  }
+
+  .example__range {
+    padding-top: 170px;
   }
 
 }
