@@ -1,4 +1,5 @@
 .footer {
+  min-width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -6,7 +7,7 @@
 }
 
   .footer__title {
-    margin: 39px auto;
+    padding: 39px 0;
     text-align: center;
     border-bottom: 1px solid @secondary-border;
 
@@ -17,47 +18,44 @@
   }
 
   .footer__social {
-    /*width: 320px;*/
     padding: 20px;
+    margin: 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     list-style: none;
     border-bottom: 1px solid @secondary-border;
   }
 
+  .footer__link-vk {
+    display: block;
+    width: 23px;
+    height: 16px;
+    background-image: url("../img/icon-vk.svg");
+    background-repeat: no-repeat;
+  }
 
-    .footer__link-vk {
-      display: block;
-      width: 23px;
-      height: 16px;
-      background-image: url("../img/icon-vk.svg");
-      background-repeat: no-repeat;
+  .footer__link-ig {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/icon-insta.svg");
+    background-repeat: no-repeat;
+  }
 
-    }
-
-    .footer__link-ig {
-      display: block;
-      width: 16px;
-      height: 16px;
-      background-image: url("../img/icon-insta.svg");
-      background-repeat: no-repeat;
-    }
-
-    .footer__link-fb {
-      display: block;
-      width: 23px;
-      height: 16px;
-      background-image: url("../img/icon-fb.svg");
-      background-repeat: no-repeat;
-    }
-
-
+  .footer__link-fb {
+    display: block;
+    width: 23px;
+    height: 16px;
+    background-image: url("../img/icon-fb.svg");
+    background-repeat: no-repeat;
+  }
 
     .footer__copyright {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 22px 0;
 
 
     p {
@@ -84,13 +82,15 @@
 }
 
 .footer__title {
-
   width: auto;
   margin: 0;
 }
 
 .footer__social {
   border: none;
+  width: 139px;
+  height: 33px;
+  padding: 0;
 }
 
 .footer__social li a{
@@ -101,21 +101,18 @@
   display: block;
   width: 30px;
   height: 22px;
-
 }
 
 .footer__link-ig {
   display: block;
   width: 23px;
   height: 23px;
-
 }
 
 .footer__link-fb {
   display: block;
   width: 28px;
   height: 33px;
-
 }
 
 .footer__copyright p {
@@ -123,5 +120,4 @@
   .font-feature-5(16px);
   margin-right: 22px;
 }
-
 }

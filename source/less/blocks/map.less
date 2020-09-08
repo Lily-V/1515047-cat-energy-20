@@ -1,0 +1,95 @@
+
+.map {
+  min-width: 320px;
+  margin: 0;
+  width: 100%;
+  background-color: @grey;
+}
+
+.map__container {
+  height: 114px;
+  padding: 28px 0 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.map__text {
+  .font-feature-5(16px);
+  text-transform: uppercase;
+}
+
+.map__address {
+  font-family: "Arial", sans-serif;
+.font-feature-6(14px);
+
+}
+
+.map__location {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.map__location iframe {
+  width: 100% ;
+}
+
+
+@media (min-width: 768px) {
+
+  .map {
+    min-width: 768px;
+    background-color: @white;
+  }
+
+  .map__container {
+    padding: 64px 70px 62px;
+
+  }
+
+  .map__text {
+    width: 171px;
+    .font-feature-9(20px);
+  }
+
+  .map__address {
+    width: 159px;
+    .font-feature-2(16px);
+  }
+
+
+@media (min-width: 1440px) {
+
+
+.map {
+  min-width: 1440px;
+  position: relative;
+}
+
+.map__container {
+  position: absolute;
+  top: 33%;
+  left: 10%;
+  background-color: @white;
+  margin: 0;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.map__text {
+  padding: 0;
+  margin: 0;
+
+}
+
+.map__address {
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+
+}
+}

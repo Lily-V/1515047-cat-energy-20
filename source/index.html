@@ -23,7 +23,7 @@
 
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a class="menu__link menu__link--index">главная</a>
+                        <a class="menu__link menu__link--index  menu__link--active  menu__link--active-white">главная</a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link menu__link--index" href="catalog.html">каталог продукции</a>
@@ -36,11 +36,11 @@
         </div>
         <section class="after-menu">
             <div class="after-menu__wrapper">
-                <p class="after-menu__title">Функциональное питание для котов</p>
+                <h1 class="after-menu__title">Функциональное питание для котов</h1>
                 <p class="after-menu__subtitle">Занялся собой? Займись котом!</p>
                 <img class="after-menu__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Cat Energy упаковка">
 
-                <a class="after-menu__link button button--green" href="form.html">подобрать программу</a>
+                <a class="after-menu__link after-menu__button button button--green" href="form.html">подобрать программу</a>
             </div>
         </section>
 
@@ -54,11 +54,9 @@
         <div class="wrapper">
             <section class="benefits">
 
-
-
-                <article class="benefits__block block--slim">
+                <article class="benefits__block benefits__block--slim">
                     <div class="benefits__wrapper">
-                        <div class="benefits__round round--slim"><svg class="benefits__img" width="50" height="50" viewBox="0 0 50 50" preserveAspectRatio="none">
+                        <div class="benefits__round benefits__round--slim"><svg class="benefits__img" width="50" height="50" viewBox="0 0 50 50" preserveAspectRatio="none">
                           <circle r="25" cx="25" cy="25"
                             fill="#68b738" stroke="" stroke-width="1"
                           />
@@ -73,9 +71,9 @@
                     </a>
                 </article>
 
-                <article class="benefits__block block--pro">
+                <article class="benefits__block benefits__block--pro">
                     <div class="benefits__wrapper">
-                        <div class="benefits__round round--pro"><svg class="benefits__img" width="50" height="50" viewBox="0 0 50 50" preserveAspectRatio="none">
+                        <div class="benefits__round benefits__round--pro"><svg class="benefits__img" width="50" height="50" viewBox="0 0 50 50" preserveAspectRatio="none">
                           <circle r="25" cx="25" cy="25"
                             fill="#68b738" stroke="" stroke-width="1"
                           />
@@ -93,37 +91,108 @@
 
             </section>
             <!--benefits-->
+        </div>
 
 
-            <!--How it works-->
-            <section class="how-it-works">
-
+        <!--How it works-->
+        <section class="how-it-works">
+            <div class="wrapper">
                 <h2 class="how-it-works__title">Как это работает</h2>
                 <ul class="how-it-works__list">
-                    <li class="how-it-works__item item--leaf">
+                    <li class="how-it-works__item how-it-works__item--leaf">
                         <p>Функциональное питание содержит только полезные питательные вещества.</p>
 
                     </li>
-                    <li class="how-it-works__item item--water">
+                    <li class="how-it-works__item how-it-works__item--water">
                         <p>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
 
                     </li>
-                    <li class="how-it-works__item item--fork">
+                    <li class="how-it-works__item how-it-works__item--fork">
                         <p>Замените один-два приема обычной еды на наше функциональное питание.
                         </p>
 
                     </li>
-                    <li class="how-it-works__item item--weight">
+                    <li class="how-it-works__item how-it-works__item--weight">
                         <p>Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
 
                     </li>
                 </ul>
-
-        </div>
-        <!--wrapper-->
+            </div>
         </section>
-        <!--how-it-works-->
-        </div>
+
+        <section class="example">
+            <div class="wrapper wrapper--example">
+                <div class="text-wrapper">
+                    <div class="example__content">
+                        <h2 class="example__title">Живой пример</h2>
+                        <p class="example__explain">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+                    </div>
+                    <div class="example__stat">
+                        <div class="example__result">
+                            <span class="example__value">5 КГ</span>
+                            <span class="example__text">снижение веса</span>
+                        </div>
+                        <div class="example__result">
+                            <span class="example__value">60 ДНЕЙ</span>
+                            <span class="example__text">затрачено времени</span>
+                        </div>
+                        <div class="example__price">
+                            <span>Затраты на питание:</span>
+                            <span>15 000 РУБ. </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="example__slider">
+
+                    <div class="example__slide example__slide--before">
+                        <picture>
+                            <source srcset="img/before-desktop@1x.png" media="(min-width: 1440px)">
+                            <source srcset="img/before-tablet@1x.png" media="(min-width: 768px)">
+                            <img class="slide-image" src="img/before-mobile@1x.png" alt="Состояние до">
+                        </picture>
+                    </div>
+                    <div class="example__slide example__slide--after">
+                        <picture>
+                            <source srcset="img/after-desktop@1x.png" media="(min-width: 1440px)">
+                            <source srcset="img/after-tablet@1x.png" media="(min-width: 768px)">
+                            <img class="slide-image" src="img/after-mobile@1x.png" alt="Состояние после">
+                        </picture>
+                    </div>
+
+                    <div class="example__range">
+                        <div class="example__range-wrapper">
+                            <div class="example__scale">
+                                <div class="example__scale-bar"></div>
+                            </div>
+                            <button class="example__scale-handle"><svg width="10" height="10"><circle r="5" cx="50%" cy="50%" fill="#68b738"/></svg></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!--Map-->
+        <section class="map">
+            <div class="wrapper">
+                <div class="map__container">
+                    <span class="map__text">приглашаем к сотрудничеству дилеров!
+                        </span>
+                    <address class="map__address">
+                          <span>ул. Большая Конюшенная, д. 19/8</span>
+                          <span>Санкт-Петербург</span>
+                        </address>
+                </div>
+            </div>
+            <div class="map__img">
+                <span class="visually-hidden">Карта Санкт-Петербурга с отметкой о нашем местонахождении</span>
+            </div>
+
+            <div class="map__location">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aee017cc118ef457883f3de7de363d0fda0d2eae1a1d0f4d56fdaae902ed1f0e8&amp;source=constructor" width="320" height="362"></iframe>
+            </div>
+        </section>
     </main>
 
 

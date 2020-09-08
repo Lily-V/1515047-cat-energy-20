@@ -23,10 +23,10 @@
 
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a class="menu__link">главная</a>
+                        <a class="menu__link" href="index.html">главная</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="catalog.html">каталог продукции</a>
+                        <a class="menu__link menu__link--active">каталог продукции</a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link" href="form.html">подбор программы</a>
@@ -43,9 +43,8 @@
 
         <!--Catalog-->
 
-
         <div class="wrapper">
-            <h1 class="catalog__title">Каталог продукции</h1>
+            <h1 class="wrapper__title">Каталог продукции</h1>
             <section class="catalog">
 
 
@@ -54,7 +53,11 @@
                     <li class="catalog__item product-card">
                         <div class="product-card__content">
                             <a class="product-card__link" href="#">
-                                <img class="product-card__img" src="https://via.placeholder.com/68x86" alt="Cat Energy PRO 500 г">
+                                <picture>
+                                    <source srcset="img/chicken-small-desktop@1x.png" media="(min-width: 1440px)">
+                                    <source srcset="img/chicken-small-tablet@1x.png" media="(min-width: 768px)">
+                                    <img class="product-card__img" src="img/chicken-small-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
+                                </picture>
                             </a>
                             <div class="product-card__wrapper">
                                 <a class="product-card__link" href="#">
@@ -78,9 +81,13 @@
                     <!--catalog__item-->
 
                     <li class="catalog__item product-card">
-                        <div class="product-card__content">
+                        <div class="product-card__content product-card__content--big">
                             <a class="product-card__link" href="#">
-                                <img class="product-card__img" src="https://via.placeholder.com/84x100" alt="Cat Energy PRO 1000 г">
+                                <picture>
+                                    <source srcset="img/chicken-big-desktop@1x.png" media="(min-width: 1440px)">
+                                    <source srcset="img/chicken-big-tablet@1x.png" media="(min-width: 768px)">
+                                    <img class="product-card__img product-card__img--big" src="img/chicken-big-mobile@1x.jpg" alt="Cat Energy PRO 1000 г">
+                                </picture>
                             </a>
 
                             <div class="product-card__wrapper">
@@ -108,7 +115,11 @@
                     <li class="catalog__item product-card">
                         <div class="product-card__content">
                             <a class="product-card__link" href="#">
-                                <img class="product-card__img" src="https://via.placeholder.com/84x100" alt="Cat Energy PRO 500 г">
+                                <picture>
+                                    <source srcset="img/fish-small-desktop@1x.png" media="(min-width: 1440px)">
+                                    <source srcset="img/fish-small-tablet@1x.png" media="(min-width: 768px)">
+                                    <img class="product-card__img" src="img/fish-small-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
+                                </picture>
                             </a>
 
                             <div class="product-card__wrapper">
@@ -134,9 +145,13 @@
                     <!--catalog__item-->
 
                     <li class="catalog__item product-card">
-                        <div class="product-card__content">
+                        <div class="product-card__content product-card__content--big">
                             <a class="product-card__link" href="#">
-                                <img class="product-card__img" src="https://via.placeholder.com/84x100" alt="Cat Energy PRO 500 г">
+                                <picture>
+                                    <source srcset="img/fish-big-desktop@1x.png" media="(min-width: 1440px)">
+                                    <source srcset="img/fish-big-tablet@1x.png" media="(min-width: 768px)">
+                                    <img class="product-card__img product-card__img--big" src="img/fish-big-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
+                                </picture>
                             </a>
 
                             <div class="product-card__wrapper">
@@ -164,7 +179,11 @@
                     <li class="catalog__item product-card">
                         <div class="product-card__content">
                             <a class="product-card__link" href="#">
-                                <img class="product-card__img" src="https://via.placeholder.com/68x78" alt="Cat Energy PRO 500 г">
+                                <picture>
+                                    <source srcset="img/buckwheat-small-desktop@1x.png" media="(min-width: 1440px)">
+                                    <source srcset="img/buckwheat-small-tablet@1x.png" media="(min-width: 768px)">
+                                    <img class="product-card__img" src="img/buckwheat-small-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
+                                </picture>
                             </a>
 
                             <div class="product-card__wrapper">
@@ -191,9 +210,13 @@
 
 
                     <li class="catalog__item product-card">
-                        <div class="product-card__content">
+                        <div class="product-card__content product-card__content--big">
                             <a class="product-card__link" href="#">
-                                <img class="product-card__img" src="https://via.placeholder.com/84x100" alt="Cat Energy PRO 1000 г">
+                                <picture>
+                                    <source srcset="img/buckwheat-big-desktop@1x.png" media="(min-width: 1440px)">
+                                    <source srcset="img/buckwheat-big-tablet@1x.png" media="(min-width: 768px)">
+                                    <img class="product-card__img product-card__img--big" src="img/buckwheat-big-mobile@1x.jpg" alt="Cat Energy PRO 1000 г">
+                                </picture>
                             </a>
 
                             <div class="product-card__wrapper">
@@ -222,7 +245,11 @@
                     <li class="catalog__item product-card">
                         <div class="product-card__content">
                             <a class="product-card__link" href="#">
-                                <img class="product-card__img" src="https://via.placeholder.com/72x84" alt="Cat Energy PRO 500 г">
+                                <picture>
+                                    <source srcset="img/rice-small-desktop@1x.png" media="(min-width: 1440px)">
+                                    <source srcset="img/rice-small-tablet@1x.png" media="(min-width: 768px)">
+                                    <img class="product-card__img" src="img/rice-small-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
+                                </picture>
                             </a>
 
                             <div class="product-card__wrapper">
@@ -249,13 +276,100 @@
                     <li class="catalog__item product-card product-card__more">
                         <p class="product-card__title">Показать еще 100500 товаров</p>
                         <p class="product-card__subtitle">На самом деле вкусов гораздо больше!</p>
-                        <a class="product-card__button--more button  button--grey" href="#">показать все</a>
+                        <a class="product-card__button-more button  button--grey" href="#">показать все</a>
                     </li>
                 </ul>
 
             </section>
             <!--catalog-->
         </div>
+
+        <section class="extra-products">
+            <div class="wrapper">
+
+                <h2 class="extra-products__title">Дополнительные товары</h2>
+                <div class="extra-products__container">
+                    <ul class="extra-products__list">
+                        <li class="extra-products__item">
+                            <div class="extra-products__wrapper">
+                                <h3 class="extra-products__name">cахарозаменитель</h3>
+                                <dl class="extra-products__content">
+                                    <dt>1 упаковка (100 г)</dt>
+                                    <dd>200 Р.</dd>
+                                </dl>
+                            </div>
+                            <a class="extra-products__button button button--green " href="# ">заказать</a>
+                        </li>
+
+                        <li class="extra-products__item">
+                            <div class="extra-products__wrapper">
+                                <h3 class="extra-products__name">питьевая вода</h3>
+                                <dl class="extra-products__content">
+                                    <dt>5 литров</dt>
+                                    <dd>50 Р.</dd>
+                                </dl>
+                            </div>
+                            <a class="extra-products__button button button--green" href="#">заказать</a>
+                        </li>
+
+                        <li class="extra-products__item">
+                            <div class="extra-products__wrapper">
+                                <h3 class="extra-products__name">молоко</h3>
+                                <dl class="extra-products__content ">
+                                    <dt>1 литр</dt>
+                                    <dd>100 Р.</dd>
+                                </dl>
+                            </div>
+                            <a class="extra-products__button button button--green " href="# ">заказать</a>
+                        </li>
+
+                        <li class="extra-products__item">
+                            <div class="extra-products__wrapper">
+                                <h3 class="extra-products__name">витамины</h3>
+                                <dl class="extra-products__content">
+                                    <dt>1 упаковка (30 г)</dt>
+                                    <dd>300 Р.</dd>
+                                </dl>
+                            </div>
+                            <a class="extra-products__button button button--green" href="#">заказать</a>
+                        </li>
+                    </ul>
+
+                    <div class="extra-products__gift">
+                        <div class="extra-products__text">
+                            <p>Закажите все <br> и получите чехол для кота в подарок!</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--wrapper-->
+        </section>
+        <!--extra-products-->
+
+        <!--Map-->
+        <section class="map">
+            <div class="wrapper">
+                <div class="map__container">
+                    <span class="map__text">приглашаем к сотрудничеству дилеров!
+                  </span>
+                    <address class="map__address">
+                    <span>ул. Большая Конюшенная, д. 19/8</span>
+                    <span>Санкт-Петербург</span>
+                  </address>
+                </div>
+            </div>
+            <div class="map__img">
+                <span class="visually-hidden">Карта Санкт-Петербурга с отметкой о нашем местонахождении</span>
+            </div>
+            <!--<div class="map__pin-wrapper">
+                <img class="map__pin" src="https://via.placeholder.com/56x52">
+                <span class="visually-hidden">Отметка нашего местонахождения по адресу: ул. Большая Конюшенная, д. 19/8</span>
+            </div>-->
+            <div class="map__location">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aee017cc118ef457883f3de7de363d0fda0d2eae1a1d0f4d56fdaae902ed1f0e8&amp;source=constructor" width="320" height="362"></iframe>
+            </div>
+        </section>
     </main>
 
     <!--Footer-->

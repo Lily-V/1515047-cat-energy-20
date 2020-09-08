@@ -1,0 +1,222 @@
+
+.extra-products__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.extra-products__title {
+  border-bottom: 1px solid @dtdd-border;
+  padding-bottom: 35px;
+}
+
+.extra-products__item {
+  border-bottom: 1px solid @dtdd-border;
+  padding-bottom: 18px;
+}
+
+.extra-products__name {
+  .font-feature(16px);
+  text-transform: uppercase;
+}
+
+.extra-products__content {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Arial", sans-serif;
+  .font-feature(14px);
+  margin-top: 13px;
+  margin-bottom: 15px;
+}
+
+
+
+  .extra-products__gift {
+    margin-top: 39px;
+    margin-bottom: 35px;
+    width: 280px;
+    height: 289px;
+
+    background-image:
+    url("../img/icon-gift.svg"),
+    url("../img/gift-photo-mobile@1x.jpg");
+    background-size: 78px 80px, 100%, 280px 289px, 100%;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    overflow: auto;
+  }
+
+  .extra-products__text {
+    margin: 186px 60px 43px;
+    text-align: center;
+    color: @white;
+    .font-feature-2(16px);
+  }
+
+
+
+  @media (min-width: 768px) {
+
+  .extra-products__title {
+    .font-feature(36px);
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 80px;
+    margin-left: 37px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      background-color: @green;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50%;
+      left: -11%;
+    }
+
+    &::after {
+      content: "";
+      width: 300px;
+      height: 2px;
+      background-color: @green;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50%;
+      left: 58%;
+    }
+  }
+
+  .extra-products__item {
+    border: 1px solid @dtdd-border;
+    padding: 26px 37px 28px;
+  }
+
+  .extra-products__wrapper {
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .extra-products__name {
+    .font-feature(20px);
+    margin: 0;
+  }
+
+  .extra-products__content {
+    .font-feature-2(16px)
+  }
+
+  .extra-products__gift {
+    margin-top: 69px;
+    margin-bottom: 76px;
+    width: 708px;
+    height: 200px;
+
+    background-image:
+    url("../img/icon-gift.svg"),
+    url("../img/gift-photo-mobile@1x.jpg");
+    background-size: 76px 78px, 100%, 708px 200px, 100%;
+    background-position: 15% 50%;
+  }
+
+  .extra-products__text {
+    margin-top: 71px;
+    margin-left: 60%;
+    text-align: left;
+    width: 161px;
+  }
+
+}
+
+@media (min-width: 1440px) {
+
+  .extra-products__title {
+    .font-feature(36px);
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 81px;
+    margin-left: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 70px;
+      height: 2px;
+      background-color: @green;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50%;
+      left: -9%;
+    }
+
+    &::after {
+      content: "";
+      width: 957px;
+      height: 2px;
+      background-color: @green;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50%;
+      left: 32%;
+    }
+  }
+
+.extra-products__list {
+  width: 896px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+}
+
+.extra-products__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  align-items: center;
+  border-left: none;
+  border-right: none;
+}
+
+.extra-products__wrapper {
+  width: 612px;
+  margin: 0;
+  margin-right: 42px;
+
+}
+
+.extra-products__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 86px;
+  height: 100%;
+}
+
+.extra-products__content {
+  font-family: "Arial", sans-serif;
+  width: 238px;
+  margin: 0;
+}
+
+.extra-products__gift {
+  width: 245px;
+  height: 289px;
+  margin: 0;
+
+  background-image:
+  url("../img/icon-gift.svg"),
+  url("../img/gift-photo-mobile@1x.jpg");
+  background-size: 76px 78px, cover, cover, 100%;
+  background-position: 50% 25%;
+}
+
+.extra-products__text {
+  text-align: center;
+  margin: 185px 42px 42px 42px;
+
+}
+}

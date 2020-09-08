@@ -1,6 +1,5 @@
 
 .how-it-works__title {
-  font-family: "Oswald", "Tahoma", sans-serif;
   .font-feature-4(36px);
   margin-bottom: 38px;
 }
@@ -13,7 +12,6 @@
 }
 
 .how-it-works__item {
-
   margin-bottom: 20px;
   font-family: "Arial", sans-serif;
   .font-feature-2(14px);
@@ -21,14 +19,13 @@
   justify-content: space-around;
   align-items: center;
 
-
   p {
     margin-left: 20px;
     width: 199px;
     height: auto;
   }
   span {
-    font-family: "Oswald", "Tahoma", sans-serif;
+
     .font-feature(280px);
     color: @grey;
     display: none;
@@ -43,6 +40,28 @@
     background-repeat: no-repeat;
     top: -40px;
     left: 0;
+
+  }
+
+  .how-it-works__item--leaf::before {
+    background-image: url(../img/advantage-leaf@1x.png);
+    background-position: center center;
+
+  }
+
+  .how-it-works__item--water::before  {
+    background-image: url(../img/advantage-powder@1x.png);
+    background-position: center center;
+  }
+
+  .how-it-works__item--fork::before  {
+    background-image: url(../img/advantage-dining@1x.png);
+    background-position: center center;
+  }
+
+  .how-it-works__item--weight::before  {
+    background-image: url(../img/advantage-clock@1x.png);
+    background-position: center center;
   }
 
 
@@ -76,18 +95,18 @@
 
     &::before {
       content: "";
-        width: 60px;
-        height: 60px;
-        background-color: @green;
-        background-repeat: no-repeat;
-        position: absolute;
-        top: -20px;
-        left: 0;
+      width: 60px;
+      height: 60px;
+      background-color: @green;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: -20px;
+      left: 0;
     }
 
     &::after {
-
       font-size: 280px;
+      font-family: "Oswald", "Tahoma", sans-serif;
       color: @grey;
       background-repeat: no-repeat;
       position: absolute;
@@ -97,19 +116,19 @@
     }
   }
 
-    .item--leaf::after {
+    .how-it-works__item--leaf::after {
       content: "1";
     }
 
-    .item--water::after {
+    .how-it-works__item--water::after {
       content: "2";
     }
 
-    .item--fork::after {
+    .how-it-works__item--fork::after {
      content: "3";
     }
 
-    .item--weight::after {
+    .how-it-works__item--weight::after {
      content: "4";
     }
 
@@ -122,7 +141,7 @@
   }
 
   .how-it-works__title {
-    font-family: "Oswald", "Tahoma", sans-serif;
+
     .font-feature(60px);
     margin-bottom: 32px;
   }

@@ -1,0 +1,319 @@
+
+
+.example {
+  padding-top: 27px;
+  min-width: 320px;
+  background-color: @example-bgr;
+}
+
+.example__title {
+  .font-feature-2(36px);
+  text-align: left;
+  margin: 0;
+}
+
+.example__explain {
+  .font-feature-2(14px);
+  font-family: "Arial", sans-serif;
+  margin-top: 33px;
+  text-align: left;
+  margin: 33px 0 26px;
+}
+
+.example__stat {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example__result {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.example__value {
+  .font-feature(24px);
+  width: 124px;
+  height: 60px;
+  border: 1px solid @dtdd-border;
+  border-radius: 5px;
+  text-align: center;
+  padding: 15px;
+}
+
+.example__text {
+  font-family: "Arial", sans-serif;
+  .font-feature(12px);
+  width: 80px;
+  height: 15px;
+  background-color: @example-bgr;
+  text-align: center;
+  position: absolute;
+  top: 85%;
+  left: 18%;
+}
+
+.example__price {
+  margin: 26px auto 42px;
+  .font-feature-6(14px);
+  text-transform: uppercase;
+}
+
+.example__slider {
+  padding-bottom: 25px;
+  position: relative;
+}
+
+.example__slide {
+  width: 280px;
+  height: 245px;
+  overflow: hidden;
+  background: @example-bgr;
+}
+
+.example__slide--before {
+  position: absolute;
+  top: 0;
+}
+
+.slide-image {
+  margin-left: -20px;
+}
+
+.example__range {
+  margin: 23px 14px;
+}
+
+.example__range-wrapper {
+  padding: 10px 84px;
+  position: relative;
+}
+
+.example__scale {
+  height: 14px;
+  padding: 2px;
+  background-color: @white;
+  box-sizing: border-box;
+  border-radius: 10px;
+  position: relative;
+}
+
+.example__scale::before {
+  content: "было";
+  position: absolute;
+  top: -6px;
+    left: -50px;
+  width: 50px;
+  height: 30px;
+  padding: 2px;
+  color: @black;
+  text-transform: uppercase;
+  background-color: @example-bgr;
+}
+
+.example__scale::after {
+  content: "стало";
+  position: absolute;
+  top: -6px;
+  right: -60px;
+  width: 50px;
+  height: 30px;
+  padding: 2px;
+  color: @black;
+  text-transform: uppercase;
+  background-color: @example-bgr;
+}
+
+.example__scale-bar {
+  height: 10px;
+  width: 50%;
+  border-radius: 10px;
+  background-color: @green;
+  box-sizing: border-box;
+}
+
+.example__scale-handle {
+  display: none;
+}
+
+
+
+
+@media (min-width: 768px){
+
+  .example {
+    min-width: 768px;
+    padding-top: 43px;
+    padding-bottom: 0;
+    border-top: 1px solid @secondary-border;
+    background-color: transparent;
+    overflow: hidden;
+  }
+
+  .example__title {
+    .font-feature(60px);
+  }
+
+  .example__explain {
+    .font-feature-7(16px);
+  }
+
+  .example {
+    padding-top: 43px;
+  }
+
+  .example__stat {
+    display: grid;
+    grid-template-columns: min-content min-content 1fr;
+    gap: 42px;
+    margin-bottom: 54px;
+  }
+
+  .example__text {
+    top: 85%;
+    left: auto;
+    background-color: @white;
+  }
+
+  .example__price {
+    text-align: right;
+    padding-left: 50px;
+    margin: 0;
+    margin-top: 15px;
+  }
+
+  .example__slider {
+    text-align: center;
+    background: linear-gradient(180deg, @white 100px, @grey 100px);
+  }
+
+  .example__slide {
+    width: 708px;
+    height: 536px;
+    background: linear-gradient(180deg, @white 167px, @grey 167px);
+  }
+
+  .example__slide--before {
+    width: 47%;
+    left: 30px;
+  }
+
+  .slide-image {
+    margin-left: -15px;
+  }
+
+  .example__scale {
+    width: 428px;
+    height: 6px;
+    margin: 0 auto;
+    background-color: @scale-border;
+    border-radius: 6px;
+    position: relative;
+  }
+
+  .example__scale::before {
+    top: -12px;
+    left: -70px;
+    width: 45px;
+    padding: 0;
+    background: @grey;
+    border-bottom: 1px @scale-border dashed;
+  }
+
+  .example__scale::after {
+    top: -12px;
+    right: -70px;
+    width: 45px;
+    padding: 0;
+    background: @grey;
+    border-bottom: 1px @scale-border dashed;
+
+  }
+
+  .example__scale-bar {
+    height: 10px;
+    width: 50%;
+    border-radius: 10px;
+    background-color: @green;
+    box-sizing: border-box;
+  }
+
+  .example__scale-bar {
+    display: none;
+  }
+
+  .example__scale-handle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 34px;
+    box-sizing: content-box;
+    padding: 0;
+    border: 1px solid @scale-border;
+    border-radius: 50%;
+    background-color: @white;
+    cursor: pointer;
+    display: block;
+  }
+}
+
+@media (min-width: 1440px) {
+  .example {
+    min-width: 1440px;
+    background-image: linear-gradient(to bottom, @white 30%, transparent 30%), linear-gradient(to right, @grey 50%, @example-bgr 30%);
+    border: none;
+  }
+
+  .wrapper--example {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+
+  .example__title {
+    margin-bottom: 146px;
+  }
+
+  .example__explain {
+    width: 436px;
+    margin-bottom: 69px;
+  }
+
+  .example__stat {
+    width: 436px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+
+  .example__text {
+    background-color: @grey;
+  }
+
+  .example__price {
+    padding-left: 0;
+  }
+
+  .example__price span {
+    margin-right: 69px;
+  }
+
+  .example__slider {
+    padding: 0;
+    padding-bottom: 50px;
+  }
+
+  .example__slide--before {
+    background-color: linear-gradient(to bottom, @white 15%, @example-bgr 15%);
+  }
+
+  .example__slide--after {
+    background-color: linear-gradient(to bottom, @white 15%, @grey 15%);
+  }
+
+}

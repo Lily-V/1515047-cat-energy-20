@@ -1,10 +1,10 @@
 .catalog {
-
   text-align: center;
   margin: 0;
   padding: 0;
+}
 
-&__title {
+.wrapper__title {
   font-family: "Oswald", "Tahoma", sans-serif;
   font-style: normal;
   .font-feature(36px);
@@ -15,9 +15,7 @@
   border-bottom: 1px solid @main-border;
   }
 
-}
 .catalog__list {
-
   position: relative;
   list-style-type: none;
   padding: 0;
@@ -28,100 +26,105 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 13px;
   padding-top: 11px;
+  padding-bottom: 25px;
   border-bottom: 1px solid @secondary-border;
+}
 
-  &__content {
-    width: 280px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.product-card__content {
+  width: 280px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.product-card__link {
+  text-decoration: none;
+}
+
+/*.product-card__img {
+  max-width: 100%;
+  height: auto;
+}*/
+
+.product-card__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.product-card__name {
+  width: 106px;
+  text-align: left;
+  font-family: "Oswald", "Tahoma", sans-serif;
+  .font-feature-2(16px);
+  color: @catalog-feature;
+  text-transform: uppercase;
+}
+
+.product-card__table {
+  font-family: "Arial", sans-serif;
+  .font-feature-2(12px);
+  color: @dark-grey;
+  margin-top: 19px;
+  padding-bottom: 25px;
+  padding-bottom: 9px;
+
+  dt,
+  dd{
+    display: inline;
+    margin: 0;
   }
 
-  &__link {
-    text-decoration: none;
-  }
-
-  &__img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  &__name {
-    width: 106px;
+  dt  {
+    clear: left;
+    float: left;
     text-align: left;
-    font-family: "Oswald", "Tahoma", sans-serif;
-    .font-feature-2(16px);
-    color: @catalog-feature;
-    text-transform: uppercase;
+
   }
 
-  &__table {
-    font-family: "Arial", sans-serif;
-    .font-feature-2(12px);
-    color: @dark-grey;
-    margin-top: 19px;
-    margin-bottom: 13px;
-
-    dt,
-    dd{
-        display: inline;
-        margin: 0;
-    }
-
-    dt  {
-        clear: left;
-        float: left;
-        text-align: left;
-
-    }
-
-    dd {
-        clear: right;
-        float: right;
-        text-align: right;
-    }
+  dd {
+    clear: right;
+    float: right;
+    text-align: right;
   }
+}
 
-  &__more {
+
+
+.product-card__more {
     padding-top: 79px;
+    padding-bottom: 25px;
+    margin: 0;
     text-align: center;
     background-image: url("../img/icon-plus-mobile.svg");
     background-repeat: no-repeat;
     background-position: 50% 15%;
     background-size: 30px 30px;
- }
+}
 
- &__title {
+.product-card__title {
   display: block;
   font-family: "Oswald", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   .font-feature-2(16px);
+  margin-bottom: 8px;
 }
 
-&__subtitle {
+.product-card__subtitle {
   display: block;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   .font-feature-2(12px);
-  margin-bottom: 21px;
-}
+  margin: 0 ;
 }
 
-.product-card__button--more {
-  margin-bottom: 25px;
-}
+
 
 @media (min-width: 768px) {
-  .catalog__title {
+  .wrapper__title {
     margin: 65px 0 0 30px;
     text-align: left;
     padding: 0;
@@ -136,7 +139,7 @@
   }
 
   .product-card {
-
+    position: relative;
     height: auto;
     padding: 0 37px 40px 36px;
     background-image: linear-gradient(to top, @grey 90%, @white 10%);
@@ -145,6 +148,17 @@
     margin: 59px auto;
 
   }
+
+  .product-card__content--big {
+    margin-top: 178px;
+  }
+
+  .product-card__img--big{
+    position: absolute;
+    top: -30px;
+    left: 0;
+  }
+
   .product-card__content {
     width: 252px;
     display: flex;
@@ -156,7 +170,7 @@
     margin-top: 34px;
   }
 
-  .product-card__name {
+   .product-card__name {
     border: none;
     .font-feature-2(20px);
     width: 75%;
@@ -188,7 +202,7 @@
     box-sizing: border-box;
     border: 2px solid @grey;
     margin-top: 110px;
-    padding: 161px 38px 0;
+    padding: 161px 38px 40px;
     background-image: url("../img/icon-plus-mobile.svg");
     background-repeat: no-repeat;
     background-position: 50% 15%;
@@ -204,13 +218,13 @@
   .product-card__subtitle {
     .font-feature-5(16px);
     width: 70%;
-    margin: 0 auto 87px;
+
   }
 }
 
 @media (min-width: 1440px) {
 
-  .catalog__title {
+  .wrapper__title {
     margin-left: 110px;
   }
   .catalog__list {
@@ -232,11 +246,16 @@
 
   .product-card__more {
     margin-top: 110px;
+    padding: 160px 28px 40px;
+
   }
 
+  .product-card__title {
+    width: 70%;
+  }
   .product-card__subtitle {
     .font-feature-5(16px);
-    width: 70%;
-    margin: 0 auto 47px;
+    width: 100%;
+
   }
 }
