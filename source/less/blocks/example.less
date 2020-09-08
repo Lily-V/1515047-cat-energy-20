@@ -2,7 +2,6 @@
 
 .example {
   padding-top: 27px;
-
   min-width: 320px;
   background-color: @example-bgr;
 }
@@ -11,7 +10,6 @@
   .font-feature-2(36px);
   text-align: left;
   margin: 0;
-
 }
 
 .example__explain {
@@ -70,14 +68,19 @@
 }
 
 .example__slide {
+  width: 280px;
+  height: 245px;
+  overflow: hidden;
   background: @example-bgr;
 }
 
 .example__slide--before {
   position: absolute;
   top: 0;
-  left: -20px;
-  overflow: hidden;
+}
+
+.slide-image {
+  margin-left: -20px;
 }
 
 .example__range {
@@ -133,18 +136,6 @@
 }
 
 .example__scale-handle {
- /* position: absolute;
-  top: 50%;
-  left: 0%;
-  transform: translateY(-50%);
-  width: 4px;
-  height: 4px;
-  box-sizing: content-box;
-  padding: 0;
-  /*border: 8px solid red;
-  border-radius: 50%;
-  background-color: @green;
-  cursor: pointer;*/
   display: none;
 }
 
@@ -172,7 +163,6 @@
 
   .example {
     padding-top: 43px;
-
   }
 
   .example__stat {
@@ -201,17 +191,18 @@
   }
 
   .example__slide {
-    background: linear-gradient(180deg, @white 100px, @grey 100px);
-  }
-
-  .example__slide img {
-    max-width: none;
-    height: auto;
+    width: 708px;
+    height: 536px;
+    background: linear-gradient(180deg, @white 167px, @grey 167px);
   }
 
   .example__slide--before {
-    width: 50%;
-    left: 20px;
+    width: 47%;
+    left: 30px;
+  }
+
+  .slide-image {
+    margin-left: -15px;
   }
 
   .example__scale {
@@ -269,20 +260,19 @@
     cursor: pointer;
     display: block;
   }
-
 }
 
 @media (min-width: 1440px) {
   .example {
     min-width: 1440px;
-    background-image: linear-gradient(to bottom, @white 25%, transparent 25%), linear-gradient(to right, @grey 50%, @example-bgr 30%);
+    background-image: linear-gradient(to bottom, @white 30%, transparent 30%), linear-gradient(to right, @grey 50%, @example-bgr 30%);
     border: none;
-
   }
 
   .wrapper--example {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 80px;
   }
 
   .example__title {
@@ -315,12 +305,11 @@
 
   .example__slider {
     padding: 0;
+    padding-bottom: 50px;
   }
 
   .example__slide--before {
     background-color: linear-gradient(to bottom, @white 15%, @example-bgr 15%);
-
-    left: -20px;
   }
 
   .example__slide--after {
