@@ -197,12 +197,21 @@
   }
 
   .example__slide--before {
-    width: 47%;
-    left: 30px;
+    width: 50%;
+  }
+
+  .example__slide--before::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: calc(50vw - 708px / 2);
+    left: calc((50vw - 708px / 2) * -1);
+    background-image: linear-gradient(180deg, @white 166px, @grey 166px);
   }
 
   .slide-image {
-    margin-left: -15px;
+    margin-left: 16px;
   }
 
   .example__scale {
@@ -310,10 +319,15 @@
 
   .example__slide--before {
     background-color: linear-gradient(to bottom, @white 15%, @example-bgr 15%);
+
   }
 
   .example__slide--after {
     background-color: linear-gradient(to bottom, @white 15%, @grey 15%);
+  }
+
+  .slide-image {
+    margin-left: 40px;
   }
 
 }
