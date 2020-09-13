@@ -28,11 +28,18 @@
 @media (min-width: 1440px) {
 
   .header--index {
-    background-image: url(../img/index-background-desktop@1x.jpg), linear-gradient(90deg, @white 50%, @green 50%);
+    background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(90deg, @white 50%, @green 50%);
     background-position: calc(50% + 360px);
     background-repeat: no-repeat;
     height: 696px;
   }
+
+@media (min-resolution: 2ppx) {
+  .header--index {
+    background-image: url("../img/index-background-desktop@2x.jpg");
+  }
+}
+
   .menu {
     display: flex;
     justify-content: space-between;

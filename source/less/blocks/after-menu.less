@@ -1,5 +1,4 @@
 .after-menu {
-
   font-family: "Oswald", "Tahoma", sans-serif;
   background: url("../img/index-background-mobile@1x.jpg");
   background-size: 320px 305px, 100%;
@@ -7,7 +6,12 @@
   background-repeat: no-repeat;
   color: @white;
   padding-top: 27px;
+}
 
+@media (min-resolution: 2ppx) {
+  .after-menu {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .after-menu__wrapper {
@@ -29,7 +33,7 @@
   .after-menu__subtitle {
     .font-feature(14px);
     padding: 0;
-    margin: 0 60px 167px 62px;
+    margin: 0 60px 110px 62px;
     text-transform: uppercase;
  }
 
@@ -42,10 +46,8 @@
     right: 10%;
 }
 
-
   .after-menu__link {
-
-    margin: 300px auto 22px;
+    margin: 210px auto 22px;
   }
 
 
@@ -87,7 +89,7 @@
     width: 709px;
     height: 609px;
     top: 110%;
-    left: 13%;
+    left: 5%;
     z-index: 1;
   }
 
@@ -117,7 +119,7 @@
     width: 552px;
     height: 499px;
     top: 0;
-    left: 40%;
+    left: 39%;
   }
 
   .after-menu__subtitle {

@@ -151,6 +151,7 @@
     border-top: 1px solid @secondary-border;
     background-color: transparent;
     overflow: hidden;
+    background: linear-gradient(180deg, @white 53%, @grey 53%);
   }
 
   .example__title {
@@ -186,14 +187,15 @@
   }
 
   .example__slider {
+    width: 100%;
     text-align: center;
-    background: linear-gradient(180deg, @white 100px, @grey 100px);
+
   }
 
   .example__slide {
     width: 708px;
     height: 536px;
-    background: linear-gradient(180deg, @white 167px, @grey 167px);
+    background: linear-gradient(180deg, @white 173px, @grey 173px);
   }
 
   .example__slide--before {
@@ -306,7 +308,14 @@
   .example__slider {
     padding: 0;
     padding-bottom: 50px;
+    background: linear-gradient(180deg, @white 175px, @grey 175px);
   }
+
+
+  .example__slide {
+    background: linear-gradient(180deg, @white 167px, @grey 167px);
+  }
+
 
   .example__slide--before {
     background-color: linear-gradient(to bottom, @white 15%, @example-bgr 15%);
@@ -315,5 +324,6 @@
   .example__slide--after {
     background-color: linear-gradient(to bottom, @white 15%, @grey 15%);
   }
+
 
 }

@@ -38,7 +38,12 @@
             <div class="after-menu__wrapper">
                 <h1 class="after-menu__title">Функциональное питание для котов</h1>
                 <p class="after-menu__subtitle">Занялся собой? Займись котом!</p>
-                <img class="after-menu__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Cat Energy упаковка">
+                <picture>
+                    <source srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x" media="(min-width: 1440px)">
+                    <source srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                    <img class="after-menu__image" src="img/index-can-mobile@1x.png 1x" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Cat Energy упаковка">
+                </picture>
+
 
                 <a class="after-menu__link after-menu__button button button--green" href="form.html">подобрать программу</a>
             </div>
@@ -146,16 +151,16 @@
 
                     <div class="example__slide example__slide--before">
                         <picture>
-                            <source srcset="img/before-desktop@1x.png" media="(min-width: 1440px)">
-                            <source srcset="img/before-tablet@1x.png" media="(min-width: 768px)">
-                            <img class="slide-image" src="img/before-mobile@1x.png" alt="Состояние до">
+                            <source srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x" media="(min-width: 1440px)">
+                            <source srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x" media="(min-width: 768px)">
+                            <img class="slide-image" src="img/before-mobile@1x.png 1x" srcset="img/before-mobile@2x.png 2x" alt="Состояние до">
                         </picture>
                     </div>
                     <div class="example__slide example__slide--after">
                         <picture>
-                            <source srcset="img/after-desktop@1x.png" media="(min-width: 1440px)">
-                            <source srcset="img/after-tablet@1x.png" media="(min-width: 768px)">
-                            <img class="slide-image" src="img/after-mobile@1x.png" alt="Состояние после">
+                            <source srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x" media="(min-width: 1440px)">
+                            <source srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x" media="(min-width: 768px)">
+                            <img class="slide-image" src="img/after-mobile@1x.png 1x" srcset="img/after-mobile@2x.png 2x" alt="Состояние после">
                         </picture>
                     </div>
 
