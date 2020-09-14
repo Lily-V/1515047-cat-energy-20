@@ -5,11 +5,11 @@ const less = require("gulp-less");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
-const csso = require("csso");
-const rename = require("rename");
+const csso = require("gulp-csso");
+const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
-const svgstore = require("svg-store");
+const svgstore = require("gulp-svgstore");
 const del = require("del");
 
 // Styles
@@ -25,7 +25,7 @@ const styles = () => {
 	.pipe(csso())
 	.pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
@@ -56,7 +56,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch("*.html", gulp.series(reload));
-  gulp.watch("source/less/**/*.less", gulp.series("styles", "reload"));
+  gulp.watch("source/less/**/*.less", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
 
@@ -100,7 +100,8 @@ const copy = () => {
 	return gulp.src([
 	"source/fonts/**/*.{woff,woff2}",
 	"source/img/**",
-	"source/*.ico"
+	"source/*.ico",
+	"source/*.html"
 ], {
 		base: "source"
 	})
@@ -115,22 +116,20 @@ const clean = () => {
 	return del("build");
 }
 
-
-
-
+exports.clean = clean;
 
 // Run build
 
-const gulp = require("gulp");
-
-const build = () => gulp.series (
-		"clean",
-		"copy",
-		"css",
-		"sprite",
-		"html"
+const build = gulp.series (
+		clean,
+		copy,
+		styles,
+		sprite
 );
 
 exports.default = gulp.series(
-  styles, server, watcher
+  build, server, watcher
 );
+
+exports.build = build;
+
